@@ -1,0 +1,1297 @@
+[
+  {
+    "id": "enteral-elental",
+    "name": "エレンタール",
+    "kana": "えれんたーる",
+    "aliases": [
+      "elental",
+      "エレンタール配合内用剤"
+    ],
+    "category": "成分栄養剤",
+    "tags": [
+      "成分栄養剤",
+      "医薬品"
+    ],
+    "favorite": false,
+    "baseAmount": 80,
+    "baseUnit": "g",
+    "nutrients": {
+      "energyKcal": 300,
+      "proteinG": 14.1,
+      "fatG": 0.51,
+      "carbohydrateG": 63.41,
+      "sodiumMEq": 11.31,
+      "potassiumMEq": 5.57,
+      "magnesiumMg": 40,
+      "phosphorusMg": 121.6,
+      "waterMl": null,
+      "insulinU": 0
+    },
+    "waterPreparation": {
+      "kind": "added-water", "baseAmount": 80, "baseUnit": "g",
+      "standardWaterMl": 250, "preparedVolumeMl": 300,
+      "note": "1 kcal/mLの標準調製。加水量を水分として計上。濃度変更時は実際の加水量へ変更。",
+      "sourceUrl": "https://www.eapharma.co.jp/patient/elental/guide-for-preparation",
+      "checkedAt": "2026-09-05"
+    },
+    "memo": "1袋80gあたり。proteinGは遊離アミノ酸量、carbohydrateGはデキストリン量。水分はwaterPreparationの標準加水量または行ごとの実入力から算出。出来上がり量とは区別。",
+    "source": "エレンタール配合内用剤 添付文書・製品情報（1袋80gの組成）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-04-26T00:00:00+09:00"
+  },
+  {
+    "id": "enteral-hepan-ed",
+    "name": "ヘパンED",
+    "kana": "へぱんいーでぃー",
+    "aliases": [
+      "hepan ed",
+      "ヘパンED配合内用剤"
+    ],
+    "category": "肝不全用成分栄養剤",
+    "tags": [
+      "成分栄養剤",
+      "肝不全",
+      "医薬品"
+    ],
+    "favorite": false,
+    "baseAmount": 80,
+    "baseUnit": "g",
+    "nutrients": {
+      "energyKcal": 310,
+      "proteinG": 11.2,
+      "fatG": null,
+      "carbohydrateG": 61.7,
+      "sodiumMEq": null,
+      "potassiumMEq": null,
+      "magnesiumMg": null,
+      "phosphorusMg": null,
+      "waterMl": null,
+      "insulinU": 0
+    },
+    "waterPreparation": {
+      "kind": "added-water", "baseAmount": 80, "baseUnit": "g",
+      "standardWaterMl": 250, "preparedVolumeMl": 300,
+      "note": "標準加水量は約250mL、出来上がりは約300mL。水分は実際の加水量で計上。",
+      "sourceUrl": "https://www.pmda.go.jp/PmdaSearch/iyakuDetail/ResultDataSetPDF/111890_3259111A1035_2_05",
+      "checkedAt": "2026-09-05"
+    },
+    "memo": "80g換算。proteinGは遊離アミノ酸量。糖質量は成分表転記値だが、今回参照できた一次情報では全電解質を十分確認できなかったため未確認扱い。",
+    "source": "ヘパンED配合内用剤 添付文書・成分表（160g/日で620kcal、アミノ酸22.4gの記載を80g換算）",
+    "sourceStatus": "unverified",
+    "updatedAt": "2026-04-26T00:00:00+09:00"
+  },
+  {
+    "id": "enteral-aminoleban-en",
+    "name": "アミノレバンEN",
+    "kana": "あみのればんいーえぬ",
+    "aliases": [
+      "aminoleban en",
+      "アミノレバンEN配合散"
+    ],
+    "category": "肝不全用経腸栄養剤",
+    "tags": [
+      "肝不全",
+      "医薬品",
+      "分包"
+    ],
+    "favorite": false,
+    "baseAmount": 50,
+    "baseUnit": "g",
+    "nutrients": {
+      "energyKcal": 213,
+      "proteinG": 13.5,
+      "fatG": 3.7,
+      "carbohydrateG": 31.5,
+      "sodiumMEq": 1.7,
+      "potassiumMEq": 5.42,
+      "magnesiumMg": 20.22,
+      "phosphorusMg": 92.41,
+      "waterMl": null,
+      "insulinU": 0
+    },
+    "waterPreparation": {
+      "kind": "added-water", "baseAmount": 50, "baseUnit": "g",
+      "standardWaterMl": 180, "preparedVolumeMl": 200,
+      "note": "標準調製の加水量は約180mL、出来上がりは約200mL。濃度変更時は実際の加水量へ変更。",
+      "sourceUrl": "https://www.otsuka.co.jp/for-patients/information/aminoleban-en/preparation/how-to-prepare.html",
+      "checkedAt": "2026-09-05"
+    },
+    "memo": "1包50gあたり。proteinGはたん白質換算値。",
+    "source": "アミノレバンEN配合散 添付文書・組成表（1包50g）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-04-26T00:00:00+09:00"
+  },
+  {
+    "id": "enteral-racol-nf-semisolid",
+    "name": "ラコールNF 経腸用半固形剤",
+    "kana": "らこーるえぬえふけいちょうようはんこけいざい",
+    "aliases": [
+      "ラコール半固形",
+      "racol nf semisolid"
+    ],
+    "category": "経腸栄養剤",
+    "tags": [
+      "半固形",
+      "医薬品"
+    ],
+    "favorite": false,
+    "baseAmount": 300,
+    "baseUnit": "g",
+    "nutrients": {
+      "energyKcal": 300,
+      "proteinG": 13.14,
+      "fatG": 6.69,
+      "carbohydrateG": 46.86,
+      "sodiumMEq": 9.6,
+      "potassiumMEq": 10.5,
+      "magnesiumMg": 57.9,
+      "phosphorusMg": 132,
+      "waterMl": 228,
+      "insulinU": 0
+    },
+    "memo": "300g/300kcalあたり。水分量は製品資料の約値。",
+    "source": "ラコールNF配合経腸用半固形剤 添付文書・製品資料（300g）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-04-26T00:00:00+09:00"
+  },
+  {
+    "id": "enteral-racol-nf-rth",
+    "name": "ラコールNF RTH製剤",
+    "kana": "らこーるえぬえふあーるてぃーえいちせいざい",
+    "aliases": [
+      "ラコールRTH",
+      "racol nf rth"
+    ],
+    "category": "経腸栄養剤",
+    "tags": [
+      "液体",
+      "RTH",
+      "医薬品"
+    ],
+    "favorite": false,
+    "baseAmount": 200,
+    "baseUnit": "mL",
+    "nutrients": {
+      "energyKcal": 200,
+      "proteinG": 8.76,
+      "fatG": 4.46,
+      "carbohydrateG": 31.24,
+      "sodiumMEq": 6.4,
+      "potassiumMEq": 7.0,
+      "magnesiumMg": 38.6,
+      "phosphorusMg": 88,
+      "waterMl": 170,
+      "insulinU": 0
+    },
+    "memo": "200mL/200kcalあたり。RTH製剤は液剤と同一組成として登録。",
+    "source": "ラコールNF配合経腸用液 添付文書・製品資料（200mL）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-04-26T00:00:00+09:00"
+  },
+  {
+    "id": "enteral-racol-nf-liquid",
+    "name": "ラコールNF",
+    "kana": "らこーるえぬえふ",
+    "aliases": [
+      "ラコールNF配合経腸用液",
+      "racol nf"
+    ],
+    "category": "経腸栄養剤",
+    "tags": [
+      "液体",
+      "医薬品"
+    ],
+    "favorite": false,
+    "baseAmount": 200,
+    "baseUnit": "mL",
+    "nutrients": {
+      "energyKcal": 200,
+      "proteinG": 8.76,
+      "fatG": 4.46,
+      "carbohydrateG": 31.24,
+      "sodiumMEq": 6.4,
+      "potassiumMEq": 7.0,
+      "magnesiumMg": 38.6,
+      "phosphorusMg": 88,
+      "waterMl": 170,
+      "insulinU": 0
+    },
+    "memo": "200mL/200kcalあたり。",
+    "source": "ラコールNF配合経腸用液 添付文書・製品資料（200mL）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-04-26T00:00:00+09:00"
+  },
+  {
+    "id": "enteral-enevo",
+    "name": "エネーボ",
+    "kana": "えねーぼ",
+    "aliases": [
+      "enevo",
+      "エネーボ配合経腸用液"
+    ],
+    "category": "経腸栄養剤",
+    "tags": [
+      "液体",
+      "医薬品",
+      "1.2kcal/mL"
+    ],
+    "favorite": false,
+    "baseAmount": 250,
+    "baseUnit": "mL",
+    "nutrients": {
+      "energyKcal": 300,
+      "proteinG": 13.5,
+      "fatG": 9.6,
+      "carbohydrateG": 39.6,
+      "sodiumMEq": 10.0,
+      "potassiumMEq": 7.67,
+      "magnesiumMg": 52,
+      "phosphorusMg": 250,
+      "waterMl": 203,
+      "insulinU": 0
+    },
+    "memo": "250mL/300kcalあたり。",
+    "source": "エネーボ配合経腸用液 添付文書・水分量資料（250mL）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-04-26T00:00:00+09:00"
+  },
+  {
+    "id": "enteral-ensure-h",
+    "name": "エンシュアH",
+    "kana": "えんしゅあえいち",
+    "aliases": [
+      "ensure h",
+      "エンシュア・H"
+    ],
+    "category": "経腸栄養剤",
+    "tags": [
+      "液体",
+      "医薬品",
+      "1.5kcal/mL"
+    ],
+    "favorite": false,
+    "baseAmount": 250,
+    "baseUnit": "mL",
+    "nutrients": {
+      "energyKcal": 375,
+      "proteinG": 13.2,
+      "fatG": 13.2,
+      "carbohydrateG": 51.5,
+      "sodiumMEq": 13.05,
+      "potassiumMEq": 14.32,
+      "magnesiumMg": 75,
+      "phosphorusMg": 200,
+      "waterMl": 194,
+      "insulinU": 0
+    },
+    "memo": "250mL/375kcalあたり。",
+    "source": "エンシュア・H 添付文書・水分量資料（250mL）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-04-26T00:00:00+09:00"
+  },
+  {
+    "id": "enteral-inolas",
+    "name": "イノラス",
+    "kana": "いのらす",
+    "aliases": [
+      "inolas",
+      "イノラス配合経腸用液"
+    ],
+    "category": "経腸栄養剤",
+    "tags": [
+      "液体",
+      "医薬品",
+      "1.6kcal/mL"
+    ],
+    "favorite": false,
+    "baseAmount": 187.5,
+    "baseUnit": "mL",
+    "nutrients": {
+      "energyKcal": 300,
+      "proteinG": 12,
+      "fatG": 9.66,
+      "carbohydrateG": 39.79,
+      "sodiumMEq": 11.74,
+      "potassiumMEq": 14.09,
+      "magnesiumMg": 123.4,
+      "phosphorusMg": 333.4,
+      "waterMl": 140,
+      "insulinU": 0
+    },
+    "memo": "1袋187.5mL/300kcalあたり。carbohydrateGは糖質量。",
+    "source": "イノラス配合経腸用液 添付文書・水分量資料（187.5mL）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-04-26T00:00:00+09:00"
+  },
+  {
+    "id": "enteral-peptino",
+    "name": "ペプチーノ",
+    "kana": "ぺぷちーの",
+    "aliases": [
+      "peptino",
+      "ペプチーノ200mL"
+    ],
+    "category": "経腸栄養剤",
+    "tags": [
+      "ペプチド",
+      "脂質ゼロ"
+    ],
+    "favorite": false,
+    "baseAmount": 200,
+    "baseUnit": "mL",
+    "nutrients": {
+      "energyKcal": 200,
+      "proteinG": 7.2,
+      "fatG": 0,
+      "carbohydrateG": 42.8,
+      "sodiumMEq": 6.09,
+      "potassiumMEq": 3.94,
+      "magnesiumMg": 36,
+      "phosphorusMg": 80,
+      "waterMl": 170,
+      "insulinU": 0
+    },
+    "memo": "200mL/200kcalあたり。メーカー公開情報では脂質・食物繊維0を確認、詳細ミネラルは流通資料も参照したため未確認扱い。",
+    "source": "ニュートリー製品情報・流通成分表（200mL）",
+    "sourceStatus": "unverified",
+    "updatedAt": "2026-04-26T00:00:00+09:00"
+  },
+  {
+    "id": "enteral-peptamen-af",
+    "name": "ペプタメンAF",
+    "kana": "ぺぷためんえーえふ",
+    "aliases": [
+      "peptamen af",
+      "ペプタメン AF"
+    ],
+    "category": "経腸栄養剤",
+    "tags": [
+      "ペプチド",
+      "高たんぱく",
+      "1.5kcal/mL"
+    ],
+    "favorite": false,
+    "baseAmount": 200,
+    "baseUnit": "mL",
+    "nutrients": {
+      "energyKcal": 300,
+      "proteinG": 19,
+      "fatG": 13.2,
+      "carbohydrateG": 26.4,
+      "sodiumMEq": 22.88,
+      "potassiumMEq": 11.87,
+      "magnesiumMg": 64,
+      "phosphorusMg": 170,
+      "waterMl": 155,
+      "insulinU": 0
+    },
+    "memo": "200mL/300kcalあたり。",
+    "source": "ネスレ ヘルスサイエンス製品栄養成分表（ペプタメンAF 200mL）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-04-26T00:00:00+09:00"
+  },
+  {
+    "id": "enteral-peptamen-sd",
+    "name": "ペプタメン スタンダード（SD）",
+    "kana": "ぺぷためんすたんだーど",
+    "aliases": [
+      "peptamen standard",
+      "peptamen sd",
+      "ペプタメンSD"
+    ],
+    "category": "経腸栄養剤",
+    "tags": [
+      "ペプチド",
+      "1.5kcal/mL"
+    ],
+    "favorite": false,
+    "baseAmount": 200,
+    "baseUnit": "mL",
+    "nutrients": {
+      "energyKcal": 300,
+      "proteinG": 10.5,
+      "fatG": 12,
+      "carbohydrateG": 37.5,
+      "sodiumMEq": 18.66,
+      "potassiumMEq": 8.18,
+      "magnesiumMg": 96,
+      "phosphorusMg": 170,
+      "waterMl": 153,
+      "insulinU": 0
+    },
+    "memo": "200mL/300kcalあたり。",
+    "source": "ネスレ ヘルスサイエンス製品栄養成分表（ペプタメン スタンダード 200mL）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-04-26T00:00:00+09:00"
+  },
+  {
+    "id": "enteral-peptamen-intense",
+    "name": "ペプタメン インテンス",
+    "kana": "ぺぷためんいんてんす",
+    "aliases": [
+      "peptamen intense",
+      "ペプタメンINTENSE"
+    ],
+    "category": "経腸栄養剤",
+    "tags": [
+      "ペプチド",
+      "高たんぱく",
+      "1.0kcal/mL"
+    ],
+    "favorite": false,
+    "baseAmount": 200,
+    "baseUnit": "mL",
+    "nutrients": {
+      "energyKcal": 200,
+      "proteinG": 18.4,
+      "fatG": 7.4,
+      "carbohydrateG": 15,
+      "sodiumMEq": 10.44,
+      "potassiumMEq": 9.21,
+      "magnesiumMg": 42,
+      "phosphorusMg": 120,
+      "waterMl": 170,
+      "insulinU": 0
+    },
+    "memo": "200mL/200kcalあたり。",
+    "source": "ネスレ ヘルスサイエンス製品栄養成分表（ペプタメン インテンス 200mL）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-04-26T00:00:00+09:00"
+  },
+  {
+    "id": "enteral-meibalance-1-0-z",
+    "name": "メイバランス 1.0 Zパック",
+    "kana": "めいばらんすいってんぜろぜっとぱっく",
+    "aliases": [
+      "meibalance 1.0 z",
+      "メイバランス1.0"
+    ],
+    "category": "経腸栄養剤",
+    "tags": [
+      "液体",
+      "1.0kcal/mL",
+      "Zパック"
+    ],
+    "favorite": false,
+    "baseAmount": 200,
+    "baseUnit": "mL",
+    "nutrients": {
+      "energyKcal": 200,
+      "proteinG": 8,
+      "fatG": 5.6,
+      "carbohydrateG": 29.4,
+      "sodiumMEq": 9.57,
+      "potassiumMEq": 5.12,
+      "magnesiumMg": 40,
+      "phosphorusMg": 120,
+      "waterMl": 168.6,
+      "insulinU": 0
+    },
+    "memo": "200mL/200kcalあたり。carbohydrateGは炭水化物31.4gではなく糖質29.4g。",
+    "source": "明治 メイバランス1.0Zパック 製品情報（200mL）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-04-26T00:00:00+09:00"
+  },
+  {
+    "id": "enteral-meibalance-2-0-z",
+    "name": "メイバランス 2.0 Zパック",
+    "kana": "めいばらんすにてんぜろぜっとぱっく",
+    "aliases": [
+      "meibalance 2.0 z",
+      "メイバランス2.0"
+    ],
+    "category": "経腸栄養剤",
+    "tags": [
+      "液体",
+      "2.0kcal/mL",
+      "Zパック"
+    ],
+    "favorite": false,
+    "baseAmount": 200,
+    "baseUnit": "mL",
+    "nutrients": {
+      "energyKcal": 400,
+      "proteinG": 13.6,
+      "fatG": 13.2,
+      "carbohydrateG": 56.8,
+      "sodiumMEq": 13.92,
+      "potassiumMEq": 8.18,
+      "magnesiumMg": 60,
+      "phosphorusMg": 200,
+      "waterMl": 138.4,
+      "insulinU": 0
+    },
+    "memo": "200mL/400kcalあたり。carbohydrateGは糖質量。",
+    "source": "明治 メイバランス2.0Zパック 製品情報（200mL）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-04-26T00:00:00+09:00"
+  },
+  {
+    "id": "enteral-isocal-supportbag",
+    "name": "アイソカル サポートBag",
+    "kana": "あいそかるさぽーとばっぐ",
+    "aliases": [
+      "isocal support bag",
+      "アイソカルサポートバッグ",
+      "アイソカル サポート バッグ"
+    ],
+    "category": "経腸栄養剤",
+    "tags": [
+      "液体",
+      "1.5kcal/mL",
+      "Bag"
+    ],
+    "favorite": false,
+    "baseAmount": 200,
+    "baseUnit": "mL",
+    "nutrients": {
+      "energyKcal": 300,
+      "proteinG": 11.4,
+      "fatG": 13.8,
+      "carbohydrateG": 30.6,
+      "sodiumMEq": 11.74,
+      "potassiumMEq": 6.14,
+      "magnesiumMg": 96,
+      "phosphorusMg": 240,
+      "waterMl": 153,
+      "insulinU": 0
+    },
+    "memo": "200mL/300kcalあたり。メーカーは2025年8月に一部栄養成分の変更を告知しているため、院内採用ロットのラベル照合が必要。",
+    "source": "ネスレ ヘルスサイエンス製品情報・流通成分表（200mL）",
+    "sourceStatus": "unverified",
+    "updatedAt": "2026-04-26T00:00:00+09:00"
+  },
+  {
+    "id": "enteral-hineigel",
+    "name": "ハイネックスイーゲル",
+    "kana": "はいねっくすいーげる",
+    "aliases": [
+      "ハイネイーゲル",
+      "hineigel",
+      "ハイネックスイーゲル"
+    ],
+    "category": "経腸栄養剤",
+    "tags": [
+      "半固形",
+      "医薬品",
+      "0.8kcal/g"
+    ],
+    "favorite": false,
+    "baseAmount": 375,
+    "baseUnit": "g",
+    "nutrients": {
+      "energyKcal": 300,
+      "proteinG": 12,
+      "fatG": 6.6,
+      "carbohydrateG": 46.2,
+      "sodiumMEq": 21.6,
+      "potassiumMEq": 12.0,
+      "magnesiumMg": 68,
+      "phosphorusMg": 248,
+      "waterMl": 330,
+      "insulinU": 0
+    },
+    "memo": "375g/300kcalあたり。製品名は『ハイネックスイーゲル』。carbohydrateGは糖質量を100kcalあたり15.4gから換算。K・Mg・P・水分は流通成分表も参照したため未確認扱い。",
+    "source": "大塚製薬工場 ハイネックスイーゲル製品情報・成分表（375g）",
+    "sourceStatus": "unverified",
+    "updatedAt": "2026-04-26T00:00:00+09:00"
+  },
+  {
+    "id": "enteral-isocal-semisolid-support",
+    "name": "アイソカル セミソリッド サポート",
+    "kana": "あいそかるせみそりっどさぽーと",
+    "aliases": [
+      "isocal semisolid support",
+      "アイソカルセミソリッドサポート"
+    ],
+    "category": "経腸栄養剤",
+    "tags": [
+      "半固形",
+      "2.0kcal/mL"
+    ],
+    "favorite": false,
+    "baseAmount": 200,
+    "baseUnit": "mL",
+    "nutrients": {
+      "energyKcal": 400,
+      "proteinG": 14.4,
+      "fatG": 16.0,
+      "carbohydrateG": 45.8,
+      "sodiumMEq": 21.75,
+      "potassiumMEq": 12.28,
+      "magnesiumMg": null,
+      "phosphorusMg": null,
+      "waterMl": 132,
+      "insulinU": 0
+    },
+    "memo": "200mL/400kcalあたり。Mg・Pは参照資料間で値が一致しなかったため未入力。",
+    "source": "ネスレ ヘルスサイエンス製品情報・流通成分表（200mL）",
+    "sourceStatus": "unverified",
+    "updatedAt": "2026-04-26T00:00:00+09:00"
+  },
+  {
+    "id": "enteral-ref-p1",
+    "name": "REF-P1（レフピーワン）",
+    "kana": "れふぴーわん",
+    "aliases": [
+      "ref-p1",
+      "レフピーワン"
+    ],
+    "category": "水溶性食物繊維食品",
+    "tags": [
+      "食物繊維",
+      "低エネルギー",
+      "半固形化補助"
+    ],
+    "favorite": false,
+    "baseAmount": 90,
+    "baseUnit": "g",
+    "nutrients": {
+      "energyKcal": 5,
+      "proteinG": 0,
+      "fatG": 0,
+      "carbohydrateG": 0.5,
+      "sodiumMEq": 6.84,
+      "potassiumMEq": null,
+      "magnesiumMg": null,
+      "phosphorusMg": null,
+      "waterMl": 87.7,
+      "insulinU": 0
+    },
+    "memo": "1袋90gあたり。炭水化物2.0gのうち糖質0.5g、食物繊維1.4g。sourceの食塩相当量0.4gからNa mEqを換算。",
+    "source": "ニュートリー REF-P1 製品情報・栄養成分（90g）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-04-26T00:00:00+09:00"
+  },
+  {
+    "id": "enteral-aqua-support",
+    "name": "アクアサポート",
+    "kana": "あくあさぽーと",
+    "aliases": [
+      "aqua support",
+      "アクアサポート500"
+    ],
+    "category": "経口補水・水分補給",
+    "tags": [
+      "経口補水",
+      "水分",
+      "電解質"
+    ],
+    "favorite": false,
+    "baseAmount": 500,
+    "baseUnit": "mL",
+    "nutrients": {
+      "energyKcal": 45,
+      "proteinG": 0,
+      "fatG": 0,
+      "carbohydrateG": 11.5,
+      "sodiumMEq": 25,
+      "potassiumMEq": 10,
+      "magnesiumMg": 6,
+      "phosphorusMg": 65,
+      "waterMl": 500,
+      "insulinU": 0
+    },
+    "memo": "500mL換算。Na 50mEq/L、K 20mEq/Lとして換算。",
+    "source": "明治 アクアサポート 製品情報（100mL栄養成分）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-04-26T00:00:00+09:00"
+  },
+  {
+    "id": "enteral-os-1",
+    "name": "OS-1",
+    "kana": "おーえすわん",
+    "aliases": [
+      "オーエスワン",
+      "ors",
+      "os1"
+    ],
+    "category": "経口補水液",
+    "tags": [
+      "経口補水",
+      "水分",
+      "電解質"
+    ],
+    "favorite": false,
+    "baseAmount": 500,
+    "baseUnit": "mL",
+    "nutrients": {
+      "energyKcal": 50,
+      "proteinG": 0,
+      "fatG": 0,
+      "carbohydrateG": 12.5,
+      "sodiumMEq": 25,
+      "potassiumMEq": 10,
+      "magnesiumMg": 12,
+      "phosphorusMg": 31,
+      "waterMl": 500,
+      "insulinU": 0
+    },
+    "memo": "500mL換算。Na 50mEq/L、K 20mEq/Lとして換算。",
+    "source": "大塚製薬工場 OS-1 製品情報（100mL栄養成分）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-04-26T00:00:00+09:00"
+  },
+  {
+    "id": "enteral-glucerna-rex",
+    "name": "グルセルナ REX",
+    "kana": "ぐるせるなれっくす",
+    "aliases": [
+      "glucerna rex",
+      "グルセルナレックス"
+    ],
+    "category": "経腸栄養剤",
+    "tags": [
+      "液体",
+      "糖質調整",
+      "1.0kcal/mL"
+    ],
+    "favorite": false,
+    "baseAmount": 200,
+    "baseUnit": "mL",
+    "nutrients": {
+      "energyKcal": 200,
+      "proteinG": 8.4,
+      "fatG": 11.1,
+      "carbohydrateG": 17.6,
+      "sodiumMEq": 8.18,
+      "potassiumMEq": 5.12,
+      "magnesiumMg": 42,
+      "phosphorusMg": 130,
+      "waterMl": 170,
+      "insulinU": 0
+    },
+    "memo": "200mL/200kcalあたり。メーカー公開情報では100mLあたり主要栄養素を確認、詳細ミネラルは流通成分表も参照したため未確認扱い。",
+    "source": "アボット グルセルナREX製品情報・流通成分表（200mL）",
+    "sourceStatus": "unverified",
+    "updatedAt": "2026-04-26T00:00:00+09:00"
+  },
+  {
+    "id": "enteral-renalen-mp-z",
+    "name": "リーナレンMP Zパック",
+    "kana": "りーなれんえむぴーぜっとぱっく",
+    "aliases": [
+      "renalen mp z",
+      "リーナレンMP"
+    ],
+    "category": "腎疾患用経腸栄養剤",
+    "tags": [
+      "腎疾患",
+      "Zパック",
+      "たんぱく質標準"
+    ],
+    "favorite": false,
+    "baseAmount": 188,
+    "baseUnit": "mL",
+    "nutrients": {
+      "energyKcal": 300,
+      "proteinG": 10.5,
+      "fatG": 8.4,
+      "carbohydrateG": 44.4,
+      "sodiumMEq": 7.87,
+      "potassiumMEq": 2.3,
+      "magnesiumMg": null,
+      "phosphorusMg": 105,
+      "waterMl": 141.6,
+      "insulinU": 0
+    },
+    "memo": "188mL/300kcalあたり。食塩相当量0.46gからNa mEqを換算。carbohydrateGは糖質量。",
+    "source": "明治 リーナレンMP Zパック 製品情報（188mL）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-04-26T00:00:00+09:00"
+  },
+  {
+    "id": "enteral-renalen-lp-z",
+    "name": "リーナレンLP Zパック",
+    "kana": "りーなれんえるぴーぜっとぱっく",
+    "aliases": [
+      "renalen lp z",
+      "リーナレンLP"
+    ],
+    "category": "腎疾患用経腸栄養剤",
+    "tags": [
+      "腎疾患",
+      "Zパック",
+      "低たんぱく"
+    ],
+    "favorite": false,
+    "baseAmount": 250,
+    "baseUnit": "mL",
+    "nutrients": {
+      "energyKcal": 400,
+      "proteinG": 4.0,
+      "fatG": 11.2,
+      "carbohydrateG": 69.2,
+      "sodiumMEq": 5.13,
+      "potassiumMEq": 3.07,
+      "magnesiumMg": null,
+      "phosphorusMg": 80,
+      "waterMl": 189.6,
+      "insulinU": 0
+    },
+    "memo": "250mL/400kcalあたり。食塩相当量0.30gからNa mEqを換算。carbohydrateGは糖質量。",
+    "source": "明治 リーナレンLP Zパック 製品情報（250mL）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-04-26T00:00:00+09:00"
+  },
+  {
+    "id": "enteral-gfo",
+    "name": "GFO",
+    "kana": "じーえふおー",
+    "aliases": [
+      "ジーエフオー",
+      "gfo"
+    ],
+    "category": "栄養補助食品",
+    "tags": [
+      "グルタミン",
+      "食物繊維",
+      "オリゴ糖"
+    ],
+    "favorite": false,
+    "baseAmount": 1,
+    "baseUnit": "包",
+    "nutrients": {
+      "energyKcal": 30,
+      "proteinG": 3.6,
+      "fatG": 0,
+      "carbohydrateG": 3.1,
+      "sodiumMEq": null,
+      "potassiumMEq": null,
+      "magnesiumMg": null,
+      "phosphorusMg": null,
+      "waterMl": null,
+      "insulinU": 0
+    },
+    "waterPreparation": {
+      "kind": "added-water", "baseAmount": 1, "baseUnit": "包",
+      "standardWaterMl": null, "preparedVolumeMl": null,
+      "note": "メーカーの加水目安は1包に約100〜150mL。実際に加えた水の1日量を入力。",
+      "sourceUrl": "https://www.otsuka-plus1.com/shop/g/g60502/",
+      "checkedAt": "2026-09-05"
+    },
+    "memo": "1包10gあたり。carbohydrateGは糖質3.1g。食塩相当量は幅表示のためNaは未入力。",
+    "source": "大塚製薬工場 GFO 製品情報（10g）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-04-26T00:00:00+09:00"
+  },
+  {
+    "id": "enteral-glutamine-co",
+    "name": "グルタミンCO",
+    "kana": "ぐるたみんしーおー",
+    "aliases": [
+      "glutamine co",
+      "グルタミンシーオー"
+    ],
+    "category": "栄養補助食品",
+    "tags": [
+      "グルタミン",
+      "分包"
+    ],
+    "favorite": false,
+    "baseAmount": 1,
+    "baseUnit": "包",
+    "nutrients": {
+      "energyKcal": 33.6,
+      "proteinG": 7.0,
+      "fatG": 0,
+      "carbohydrateG": 1.0,
+      "sodiumMEq": 0.03,
+      "potassiumMEq": 0.05,
+      "magnesiumMg": 0.2,
+      "phosphorusMg": 0.5,
+      "waterMl": null,
+      "insulinU": 0
+    },
+    "waterPreparation": {
+      "kind": "added-water", "baseAmount": 1, "baseUnit": "包",
+      "standardWaterMl": null, "preparedVolumeMl": null,
+      "note": "加水の目安は1包200mL。加水量変更・飲料や食品への混和もあるため実際の水分量を入力。別の行で計上済みの水分は含めない。",
+      "sourceUrl": "https://ai-do.jp/archives/831",
+      "checkedAt": "2026-09-05"
+    },
+    "memo": "1包8.7gあたり。参照資料間に炭水化物表記の揺れがあるため未確認扱い。carbohydrateGは糖質量。",
+    "source": "ヘルシーフード グルタミンCO 栄養成分表（1包8.7g）",
+    "sourceStatus": "unverified",
+    "updatedAt": "2026-04-26T00:00:00+09:00"
+  },
+  {
+    "id": "enteral-oligowan",
+    "name": "オリゴワン",
+    "kana": "おりごわん",
+    "aliases": [
+      "oligowan",
+      "オリゴ糖"
+    ],
+    "category": "栄養補助食品",
+    "tags": [
+      "オリゴ糖",
+      "分包"
+    ],
+    "favorite": false,
+    "baseAmount": 1,
+    "baseUnit": "包",
+    "nutrients": {
+      "energyKcal": 14,
+      "proteinG": 0,
+      "fatG": 0,
+      "carbohydrateG": 5.1,
+      "sodiumMEq": null,
+      "potassiumMEq": null,
+      "magnesiumMg": 0,
+      "phosphorusMg": null,
+      "waterMl": null,
+      "insulinU": 0
+    },
+    "waterPreparation": {
+      "kind": "total-water", "baseAmount": 1, "baseUnit": "包",
+      "standardWaterMl": null, "preparedVolumeMl": null,
+      "note": "登録は7g基準。参照した公式資料の8g規格と一致しないため、使用製品のラベルで水分を確認して入力。水を加える場合はその量も含め、別行との二重計上を避ける。",
+      "sourceUrl": "https://www.hb-life.jp/products/p_oligo.html",
+      "checkedAt": "2026-09-05"
+    },
+    "memo": "1包7gあたり。電解質は微量または資料間で表記が乏しいため一部未入力。",
+    "source": "ヘルシーフード オリゴワン 栄養成分表（1包7g）",
+    "sourceStatus": "unverified",
+    "updatedAt": "2026-04-26T00:00:00+09:00"
+  },
+  {
+    "id": "enteral-g-fine",
+    "name": "G-ファイン",
+    "kana": "じーふぁいん",
+    "aliases": [
+      "g-fine",
+      "ジーファイン",
+      "Gファイン"
+    ],
+    "category": "栄養補助食品",
+    "tags": [
+      "食物繊維",
+      "分包"
+    ],
+    "favorite": false,
+    "baseAmount": 1,
+    "baseUnit": "包",
+    "nutrients": {
+      "energyKcal": 12,
+      "proteinG": 0,
+      "fatG": 0,
+      "carbohydrateG": 0.6,
+      "sodiumMEq": 1.74,
+      "potassiumMEq": 0.33,
+      "magnesiumMg": null,
+      "phosphorusMg": 2,
+      "waterMl": null,
+      "insulinU": 0
+    },
+    "waterPreparation": {
+      "kind": "added-water", "baseAmount": 1, "baseUnit": "包",
+      "standardWaterMl": null, "preparedVolumeMl": null,
+      "note": "加水の目安は1包50〜100mL。飲料・食品への混和もあるため実際の水分量を入力。別の行で計上済みの水分は含めない。",
+      "sourceUrl": "https://www.shop-ai-do.jp/?pid=21598038",
+      "checkedAt": "2026-09-05"
+    },
+    "memo": "1包5.6gあたり。carbohydrateGは糖質0.6g、食物繊維5.0gは本アプリ項目外。",
+    "source": "アイドゥ G-ファイン 栄養成分表（1包5.6g）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-04-26T00:00:00+09:00"
+  },
+  {
+    "id": "enteral-yh-fast-s-300k",
+    "name": "明治YH Fast-S 300K",
+    "kana": "めいじわいえいちふぁすとえすさんびゃくけー",
+    "aliases": [
+      "YH Fast-S 300K",
+      "YHFast-S 300K",
+      "YH Fast S 300K",
+      "YHファストS 300K",
+      "YHファスト 300K",
+      "YHFastS 300kcal",
+      "ワイエイチファストS"
+    ],
+    "category": "発酵乳配合流動食",
+    "tags": [
+      "液体",
+      "発酵乳",
+      "酸性流動食",
+      "食物繊維",
+      "0.86kcal/mL",
+      "明治"
+    ],
+    "favorite": false,
+    "baseAmount": 348,
+    "baseUnit": "mL",
+    "nutrients": {
+      "energyKcal": 300,
+      "proteinG": 12.0,
+      "fatG": 8.4,
+      "carbohydrateG": 42.9,
+      "sodiumMEq": 25.71,
+      "potassiumMEq": 7.67,
+      "magnesiumMg": 60,
+      "phosphorusMg": 270,
+      "waterMl": 300.0,
+      "insulinU": 0
+    },
+    "memo": "1パック348mL/300kcalあたり。carbohydrateGは糖質42.9g。水分300gをmL相当として登録。ナトリウム591mg、カリウム300mgからmEqへ換算。",
+    "source": "明治 YH Fast 公式製品ページ・標準組成表（2026-05-26確認）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-05-26T00:00:00+09:00"
+  },
+  {
+    "id": "enteral-yh-fast-s-400k",
+    "name": "明治YH Fast-S 400K",
+    "kana": "めいじわいえいちふぁすとえすよんひゃくけー",
+    "aliases": [
+      "YH Fast-S 400K",
+      "YHFast-S 400K",
+      "YH Fast S 400K",
+      "YHファストS 400K",
+      "YHファスト 400K",
+      "YHFastS 400kcal",
+      "ワイエイチファストS"
+    ],
+    "category": "発酵乳配合流動食",
+    "tags": [
+      "液体",
+      "発酵乳",
+      "酸性流動食",
+      "食物繊維",
+      "0.86kcal/mL",
+      "明治"
+    ],
+    "favorite": false,
+    "baseAmount": 464,
+    "baseUnit": "mL",
+    "nutrients": {
+      "energyKcal": 400,
+      "proteinG": 16.0,
+      "fatG": 11.2,
+      "carbohydrateG": 57.2,
+      "sodiumMEq": 34.28,
+      "potassiumMEq": 10.23,
+      "magnesiumMg": 80,
+      "phosphorusMg": 360,
+      "waterMl": 400.0,
+      "insulinU": 0
+    },
+    "memo": "1パック464mL/400kcalあたり。carbohydrateGは糖質57.2g。水分400gをmL相当として登録。ナトリウム788mg、カリウム400mgからmEqへ換算。",
+    "source": "明治 YH Fast 公式製品ページ・標準組成表（2026-05-26確認）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-05-26T00:00:00+09:00"
+  },
+  {
+    "id": "enteral-yh-fast-s-500k",
+    "name": "明治YH Fast-S 500K",
+    "kana": "めいじわいえいちふぁすとえすごひゃくけー",
+    "aliases": [
+      "YH Fast-S 500K",
+      "YHFast-S 500K",
+      "YH Fast S 500K",
+      "YHファストS 500K",
+      "YHファスト 500K",
+      "YHFastS 500kcal",
+      "ワイエイチファストS"
+    ],
+    "category": "発酵乳配合流動食",
+    "tags": [
+      "液体",
+      "発酵乳",
+      "酸性流動食",
+      "食物繊維",
+      "0.86kcal/mL",
+      "明治"
+    ],
+    "favorite": false,
+    "baseAmount": 580,
+    "baseUnit": "mL",
+    "nutrients": {
+      "energyKcal": 500,
+      "proteinG": 20.0,
+      "fatG": 14.0,
+      "carbohydrateG": 71.5,
+      "sodiumMEq": 42.85,
+      "potassiumMEq": 12.79,
+      "magnesiumMg": 100,
+      "phosphorusMg": 450,
+      "waterMl": 500.0,
+      "insulinU": 0
+    },
+    "memo": "1パック580mL/500kcalあたり。carbohydrateGは糖質71.5g。水分500gをmL相当として登録。ナトリウム985mg、カリウム500mgからmEqへ換算。",
+    "source": "明治 YH Fast 公式製品ページ・標準組成表（2026-05-26確認）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-05-26T00:00:00+09:00"
+  },
+  {
+    "id": "enteral-yh-fast-h-400k",
+    "name": "明治YH Fast-H 400K",
+    "kana": "めいじわいえいちふぁすとえいちよんひゃくけー",
+    "aliases": [
+      "YH Fast-H 400K",
+      "YHFast-H 400K",
+      "YH Fast H 400K",
+      "YHファストH 400K",
+      "YHファスト濃縮 400K",
+      "YHFastH 400kcal",
+      "ワイエイチファストH"
+    ],
+    "category": "発酵乳配合流動食",
+    "tags": [
+      "液体",
+      "発酵乳",
+      "酸性流動食",
+      "食物繊維",
+      "濃縮",
+      "1.27kcal/mL",
+      "明治"
+    ],
+    "favorite": false,
+    "baseAmount": 314,
+    "baseUnit": "mL",
+    "nutrients": {
+      "energyKcal": 400,
+      "proteinG": 16.0,
+      "fatG": 11.2,
+      "carbohydrateG": 58.0,
+      "sodiumMEq": 17.4,
+      "potassiumMEq": 10.23,
+      "magnesiumMg": 80,
+      "phosphorusMg": 360,
+      "waterMl": 250.0,
+      "insulinU": 0
+    },
+    "memo": "1パック314mL/400kcalあたり。carbohydrateGは糖質58.0g。水分250gをmL相当として登録。ナトリウム400mg、カリウム400mgからmEqへ換算。",
+    "source": "明治 YH Fast 公式製品ページ・標準組成表（2026-05-26確認）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-05-26T00:00:00+09:00"
+  },
+  {
+    "id": "enteral-yh-fast-h-500k",
+    "name": "明治YH Fast-H 500K",
+    "kana": "めいじわいえいちふぁすとえいちごひゃくけー",
+    "aliases": [
+      "YH Fast-H 500K",
+      "YHFast-H 500K",
+      "YH Fast H 500K",
+      "YHファストH 500K",
+      "YHファスト濃縮 500K",
+      "YHFastH 500kcal",
+      "ワイエイチファストH"
+    ],
+    "category": "発酵乳配合流動食",
+    "tags": [
+      "液体",
+      "発酵乳",
+      "酸性流動食",
+      "食物繊維",
+      "濃縮",
+      "1.31kcal/mL",
+      "明治"
+    ],
+    "favorite": false,
+    "baseAmount": 381,
+    "baseUnit": "mL",
+    "nutrients": {
+      "energyKcal": 500,
+      "proteinG": 20.0,
+      "fatG": 14.0,
+      "carbohydrateG": 72.5,
+      "sodiumMEq": 21.75,
+      "potassiumMEq": 12.79,
+      "magnesiumMg": 100,
+      "phosphorusMg": 450,
+      "waterMl": 300.0,
+      "insulinU": 0
+    },
+    "memo": "1パック381mL/500kcalあたり。carbohydrateGは糖質72.5g。水分300gをmL相当として登録。ナトリウム500mg、カリウム500mgからmEqへ換算。",
+    "source": "明治 YH Fast 公式製品ページ・標準組成表（2026-05-26確認）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-05-26T00:00:00+09:00"
+  },
+  {
+    "id": "enteral-nexus-st",
+    "name": "ネクサスST",
+    "kana": "ねくさすえすてぃー",
+    "aliases": [
+      "NEXUS ST",
+      "nexus st",
+      "ネクサスエスティー",
+      "ネクサスST紙パック",
+      "ネクサスST 300kcal",
+      "ネクサスSTアセプバッグ300kcal"
+    ],
+    "category": "消化態流動食",
+    "tags": [
+      "液体",
+      "消化態",
+      "ペプチド",
+      "1.5kcal/mL",
+      "MCT",
+      "EPA・DHA",
+      "クリニコ"
+    ],
+    "favorite": false,
+    "baseAmount": 200,
+    "baseUnit": "mL",
+    "nutrients": {
+      "energyKcal": 300,
+      "proteinG": 12.0,
+      "fatG": 8.4,
+      "carbohydrateG": 44.1,
+      "sodiumMEq": 15.7,
+      "potassiumMEq": 10.2,
+      "magnesiumMg": 96,
+      "phosphorusMg": 234,
+      "waterMl": 156.0,
+      "insulinU": 0
+    },
+    "memo": "200mL/300kcalあたり。紙パック200mLとアセプバッグ200mLは同一組成として登録。窒素源はペプチドとアミノ酸。EPA270mg、DHA180mg、カルニチン30mg/200mL。",
+    "source": "森永乳業クリニコ ネクサスST 公式製品ページ・標準組成（2026-05-26確認）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-05-26T00:00:00+09:00"
+  },
+  {
+    "id": "enteral-nexus-st-asepbag-400k",
+    "name": "ネクサスSTアセプバッグ 400kcal",
+    "kana": "ねくさすえすてぃーあせぷばっぐよんひゃくきろかろりー",
+    "aliases": [
+      "ネクサスST 400kcal",
+      "ネクサスST 400K",
+      "ネクサスST 267mL",
+      "ネクサスSTアセプバッグ400kcal",
+      "ネクサスSTバッグ400",
+      "NEXUS ST 400",
+      "nexus st 400"
+    ],
+    "category": "消化態流動食",
+    "tags": [
+      "液体",
+      "消化態",
+      "ペプチド",
+      "アセプバッグ",
+      "1.5kcal/mL",
+      "MCT",
+      "EPA・DHA",
+      "クリニコ"
+    ],
+    "favorite": false,
+    "baseAmount": 267,
+    "baseUnit": "mL",
+    "nutrients": {
+      "energyKcal": 400,
+      "proteinG": 16.0,
+      "fatG": 11.0,
+      "carbohydrateG": 58.8,
+      "sodiumMEq": 20.9,
+      "potassiumMEq": 13.6,
+      "magnesiumMg": 128,
+      "phosphorusMg": 312,
+      "waterMl": 208.0,
+      "insulinU": 0
+    },
+    "memo": "1袋267mL/400kcalあたり。アセプバッグ400kcal規格。窒素源はペプチドとアミノ酸。EPA360mg、DHA240mg、カルニチン40mg/267mL。脂質は公式標準組成の丸め値11gを登録。",
+    "source": "森永乳業クリニコ ネクサスSTアセプバッグ 公式製品ページ・標準組成（2026-05-26確認）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-05-26T00:00:00+09:00"
+  }
+]

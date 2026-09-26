@@ -1,0 +1,1489 @@
+[
+  {
+    "id": "ons-meibalance-mini-cup",
+    "name": "メイバランスMiniカップ（主要フレーバー共通）",
+    "kana": "めいばらんすみにかっぷ",
+    "aliases": [
+      "メイバランスミニカップ",
+      "メイバランスmini",
+      "明治メイバランスMini",
+      "mini cup",
+      "meibalance mini",
+      "みにかっぷ"
+    ],
+    "category": "高エネルギー飲料",
+    "tags": [
+      "ONS",
+      "高エネルギー",
+      "200kcal",
+      "たんぱく質7.5g",
+      "明治"
+    ],
+    "favorite": true,
+    "baseAmount": 1,
+    "baseUnit": "本",
+    "nutrients": {
+      "energyKcal": 200,
+      "proteinG": 7.5,
+      "fatG": 5.6,
+      "carbohydrateG": 29.3,
+      "sodiumMEq": 5.65,
+      "potassiumMEq": 4.6,
+      "magnesiumMg": 40,
+      "phosphorusMg": 140,
+      "waterMl": 93.9,
+      "insulinU": 0
+    },
+    "memo": "1本125mL。糖質29.3gをcarbohydrateGへ登録。水分は水分93.9gをmL相当として登録。",
+    "source": "株式会社明治 公式製品ページ・栄養成分表示（2026-04-28確認）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-04-28T00:00:00+09:00"
+  },
+  {
+    "id": "ons-meibalance-soft-jelly",
+    "name": "メイバランスソフトJelly（ヨーグルト系フレーバー共通）",
+    "kana": "めいばらんすそふとぜりー",
+    "aliases": [
+      "メイバランスソフトゼリー",
+      "メイバランスソフトJelly",
+      "ソフトJelly",
+      "soft jelly",
+      "meibalance soft jelly",
+      "そふとぜりー"
+    ],
+    "category": "高エネルギーゼリー",
+    "tags": [
+      "ONS",
+      "ゼリー",
+      "200kcal",
+      "たんぱく質7.5g",
+      "明治"
+    ],
+    "favorite": true,
+    "baseAmount": 1,
+    "baseUnit": "個",
+    "nutrients": {
+      "energyKcal": 200,
+      "proteinG": 7.5,
+      "fatG": 5.6,
+      "carbohydrateG": 29.1,
+      "sodiumMEq": 5.65,
+      "potassiumMEq": 2.05,
+      "magnesiumMg": 40,
+      "phosphorusMg": 120,
+      "waterMl": 94.5,
+      "insulinU": 0
+    },
+    "memo": "1個125mL相当。糖質29.1gをcarbohydrateGへ登録。水分は水分94.5gをmL相当として登録。",
+    "source": "株式会社明治 公式製品ページ・栄養成分表示（2026-04-28確認）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-04-28T00:00:00+09:00"
+  },
+  {
+    "id": "ons-meibalance-argmini-cup",
+    "name": "メイバランスArgMiniカップ",
+    "kana": "めいばらんすあるぐみにかっぷ",
+    "aliases": [
+      "メイバランスArgMini",
+      "アルグミニ",
+      "ArgMini",
+      "arg mini",
+      "めいばらんすあるぐみに"
+    ],
+    "category": "高たんぱく飲料",
+    "tags": [
+      "ONS",
+      "アルギニン",
+      "200kcal",
+      "たんぱく質10g",
+      "明治"
+    ],
+    "favorite": false,
+    "baseAmount": 1,
+    "baseUnit": "本",
+    "nutrients": {
+      "energyKcal": 200,
+      "proteinG": 10.0,
+      "fatG": 7.5,
+      "carbohydrateG": 22.5,
+      "sodiumMEq": 5.87,
+      "potassiumMEq": 3.07,
+      "magnesiumMg": 30,
+      "phosphorusMg": 120,
+      "waterMl": 94.4,
+      "insulinU": 0
+    },
+    "memo": "1本125mL。糖質22.5gをcarbohydrateGへ登録。アルギニン2.5g含有。",
+    "source": "株式会社明治 公式製品ページ・栄養成分表示（2026-04-28確認）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-04-28T00:00:00+09:00"
+  },
+  {
+    "id": "ons-meibalance-gyutto-mini",
+    "name": "メイバランスぎゅっとMini",
+    "kana": "めいばらんすぎゅっとみに",
+    "aliases": [
+      "メイバランスぎゅっとミニ",
+      "ぎゅっとMini",
+      "gyutto mini",
+      "メイバランス濃厚"
+    ],
+    "category": "少量高エネルギー飲料",
+    "tags": [
+      "ONS",
+      "少量",
+      "200kcal",
+      "100mL",
+      "明治"
+    ],
+    "favorite": false,
+    "baseAmount": 1,
+    "baseUnit": "本",
+    "nutrients": {
+      "energyKcal": 200,
+      "proteinG": 7.5,
+      "fatG": 5.6,
+      "carbohydrateG": 29.3,
+      "sodiumMEq": 5.65,
+      "potassiumMEq": 4.6,
+      "magnesiumMg": 40,
+      "phosphorusMg": 140,
+      "waterMl": 68.9,
+      "insulinU": 0
+    },
+    "memo": "1本100mL。糖質29.3gをcarbohydrateGへ登録。水分は水分68.9gをmL相当として登録。",
+    "source": "株式会社明治 公式製品ページ・栄養成分表示（2026-04-28確認）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-04-28T00:00:00+09:00"
+  },
+  {
+    "id": "ons-meibalance-gyutto-mini-plus",
+    "name": "メイバランスぎゅっとMiniプラス",
+    "kana": "めいばらんすぎゅっとみにぷらす",
+    "aliases": [
+      "メイバランスぎゅっとミニプラス",
+      "ぎゅっとMiniプラス",
+      "gyutto mini plus",
+      "ぎゅっとプラス"
+    ],
+    "category": "少量高エネルギー飲料",
+    "tags": [
+      "ONS",
+      "少量",
+      "アルギニン",
+      "200kcal",
+      "100mL",
+      "明治"
+    ],
+    "favorite": false,
+    "baseAmount": 1,
+    "baseUnit": "本",
+    "nutrients": {
+      "energyKcal": 200,
+      "proteinG": 7.5,
+      "fatG": 5.6,
+      "carbohydrateG": 29.3,
+      "sodiumMEq": 4.78,
+      "potassiumMEq": 4.35,
+      "magnesiumMg": 40,
+      "phosphorusMg": 130,
+      "waterMl": 68.7,
+      "insulinU": 0
+    },
+    "memo": "1本100mL。糖質29.3gをcarbohydrateGへ登録。アルギニン2.5g含有。",
+    "source": "株式会社明治 公式製品ページ・栄養成分表示（2026-04-28確認）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-04-28T00:00:00+09:00"
+  },
+  {
+    "id": "ons-meibalance-brick-jelly",
+    "name": "メイバランスブリックゼリー",
+    "kana": "めいばらんすぶりっくぜりー",
+    "aliases": [
+      "メイバランスブリックゼリー",
+      "ブリックゼリー",
+      "brick jelly",
+      "meibalance brick jelly"
+    ],
+    "category": "高エネルギーゼリー",
+    "tags": [
+      "ONS",
+      "ゼリー",
+      "350kcal",
+      "明治"
+    ],
+    "favorite": false,
+    "baseAmount": 1,
+    "baseUnit": "個",
+    "nutrients": {
+      "energyKcal": 350,
+      "proteinG": 12.0,
+      "fatG": 14.0,
+      "carbohydrateG": 43.0,
+      "sodiumMEq": 8.7,
+      "potassiumMEq": 8.18,
+      "magnesiumMg": 18,
+      "phosphorusMg": 195,
+      "waterMl": 145.0,
+      "insulinU": 0
+    },
+    "memo": "1個220g。糖質43.0gをcarbohydrateGへ登録。水分は水分145.0gをmL相当として登録。",
+    "source": "株式会社明治 公式製品ページ・栄養成分表示（2026-04-28確認）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-04-28T00:00:00+09:00"
+  },
+  {
+    "id": "ons-v-crescp10-drink",
+    "name": "ブイ・クレスCP10",
+    "kana": "ぶいくれすしーぴーてん",
+    "aliases": [
+      "CP10",
+      "シーピーテン",
+      "ブイクレスCP10",
+      "ブイ・クレス CP10",
+      "V CRESC CP10",
+      "v crescp10"
+    ],
+    "category": "たんぱく質補助飲料",
+    "tags": [
+      "ONS",
+      "コラーゲンペプチド",
+      "たんぱく質12g",
+      "80kcal",
+      "ニュートリー"
+    ],
+    "favorite": true,
+    "baseAmount": 1,
+    "baseUnit": "本",
+    "nutrients": {
+      "energyKcal": 80,
+      "proteinG": 12.0,
+      "fatG": 0.0,
+      "carbohydrateG": 8.0,
+      "sodiumMEq": null,
+      "potassiumMEq": 0.77,
+      "magnesiumMg": 1,
+      "phosphorusMg": 4,
+      "waterMl": 110.0,
+      "insulinU": 0
+    },
+    "memo": "1本125mL。食塩相当量が0.09〜0.16gの範囲表示のためsodiumMEqはnull。炭水化物8.0gを登録。",
+    "source": "ニュートリー 公式製品ページ・栄養成分表示（2026-04-28確認）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-04-28T00:00:00+09:00"
+  },
+  {
+    "id": "ons-v-crescp10-jelly-mixfruit",
+    "name": "ブイ・クレスCP10ゼリー ミックスフルーツ",
+    "kana": "ぶいくれすしーぴーてんぜりーみっくすふるーつ",
+    "aliases": [
+      "CP10ゼリー",
+      "シーピーテンゼリー",
+      "ミックスフルーツ",
+      "V CRESC CP10ゼリー"
+    ],
+    "category": "たんぱく質補助ゼリー",
+    "tags": [
+      "ONS",
+      "ゼリー",
+      "コラーゲンペプチド",
+      "たんぱく質12g",
+      "110kcal",
+      "ニュートリー"
+    ],
+    "favorite": true,
+    "baseAmount": 1,
+    "baseUnit": "個",
+    "nutrients": {
+      "energyKcal": 110,
+      "proteinG": 12.0,
+      "fatG": 0.0,
+      "carbohydrateG": 15.5,
+      "sodiumMEq": null,
+      "potassiumMEq": 0.33,
+      "magnesiumMg": 1,
+      "phosphorusMg": 7,
+      "waterMl": 53.0,
+      "insulinU": 0
+    },
+    "memo": "1個80g。食塩相当量が0.09〜0.19gの範囲表示のためsodiumMEqはnull。炭水化物15.5gを登録。",
+    "source": "ニュートリー 公式製品ページ・栄養成分表示（2026-04-28確認）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-04-28T00:00:00+09:00"
+  },
+  {
+    "id": "ons-v-crescp10-jelly-rubyorange",
+    "name": "ブイ・クレスCP10ゼリー ルビーオレンジ",
+    "kana": "ぶいくれすしーぴーてんぜりーるびーおれんじ",
+    "aliases": [
+      "CP10ゼリー",
+      "シーピーテンゼリー",
+      "ルビーオレンジ",
+      "V CRESC CP10ゼリー"
+    ],
+    "category": "たんぱく質補助ゼリー",
+    "tags": [
+      "ONS",
+      "ゼリー",
+      "コラーゲンペプチド",
+      "たんぱく質12g",
+      "110kcal",
+      "ニュートリー"
+    ],
+    "favorite": false,
+    "baseAmount": 1,
+    "baseUnit": "個",
+    "nutrients": {
+      "energyKcal": 110,
+      "proteinG": 12.0,
+      "fatG": 0.0,
+      "carbohydrateG": 15.5,
+      "sodiumMEq": null,
+      "potassiumMEq": 1.13,
+      "magnesiumMg": 1,
+      "phosphorusMg": 4,
+      "waterMl": 53.0,
+      "insulinU": 0
+    },
+    "memo": "1個80g。食塩相当量が0.08〜0.16gの範囲表示のためsodiumMEqはnull。炭水化物15.5gを登録。",
+    "source": "ニュートリー 公式製品ページ・栄養成分表示（2026-04-28確認）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-04-28T00:00:00+09:00"
+  },
+  {
+    "id": "ons-v-crescbio-carrot",
+    "name": "ブイ・クレスBIO キャロット",
+    "kana": "ぶいくれすばいおきゃろっと",
+    "aliases": [
+      "ブイクレスBIO",
+      "ブイ・クレスBIO",
+      "V CRESC BIO",
+      "キャロット",
+      "びお"
+    ],
+    "category": "微量栄養素補助飲料",
+    "tags": [
+      "ONS",
+      "ビタミン",
+      "微量栄養素",
+      "90kcal",
+      "ニュートリー"
+    ],
+    "favorite": false,
+    "baseAmount": 1,
+    "baseUnit": "本",
+    "nutrients": {
+      "energyKcal": 90,
+      "proteinG": 0.3,
+      "fatG": 0.0,
+      "carbohydrateG": 22.3,
+      "sodiumMEq": 0.86,
+      "potassiumMEq": 2.28,
+      "magnesiumMg": 3,
+      "phosphorusMg": 13,
+      "waterMl": 110.0,
+      "insulinU": 0
+    },
+    "memo": "1本125mL。食塩相当量0.05gからナトリウムmEqへ換算。炭水化物22.3gを登録。",
+    "source": "ニュートリー 公式製品ページ・栄養成分表示（2026-04-28確認）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-04-28T00:00:00+09:00"
+  },
+  {
+    "id": "ons-v-crescbio-peach",
+    "name": "ブイ・クレスBIO ピーチ",
+    "kana": "ぶいくれすばいおぴーち",
+    "aliases": [
+      "ブイクレスBIO",
+      "ブイ・クレスBIO",
+      "V CRESC BIO",
+      "ピーチ",
+      "びお"
+    ],
+    "category": "微量栄養素補助飲料",
+    "tags": [
+      "ONS",
+      "ビタミン",
+      "微量栄養素",
+      "90kcal",
+      "ニュートリー"
+    ],
+    "favorite": false,
+    "baseAmount": 1,
+    "baseUnit": "本",
+    "nutrients": {
+      "energyKcal": 90,
+      "proteinG": 0.3,
+      "fatG": 0.0,
+      "carbohydrateG": 23.0,
+      "sodiumMEq": 0.51,
+      "potassiumMEq": 0.43,
+      "magnesiumMg": 1,
+      "phosphorusMg": 5,
+      "waterMl": 111.0,
+      "insulinU": 0
+    },
+    "memo": "1本125mL。食塩相当量0.03gからナトリウムmEqへ換算。炭水化物23.0gを登録。",
+    "source": "ニュートリー 公式製品ページ・栄養成分表示（2026-04-28確認）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-04-28T00:00:00+09:00"
+  },
+  {
+    "id": "ons-v-crescbio-lafrance",
+    "name": "ブイ・クレスBIO ラ・フランス",
+    "kana": "ぶいくれすばいおらふらんす",
+    "aliases": [
+      "ブイクレスBIO",
+      "ブイ・クレスBIO",
+      "V CRESC BIO",
+      "ラフランス",
+      "ラ・フランス",
+      "びお"
+    ],
+    "category": "微量栄養素補助飲料",
+    "tags": [
+      "ONS",
+      "ビタミン",
+      "微量栄養素",
+      "90kcal",
+      "ニュートリー"
+    ],
+    "favorite": false,
+    "baseAmount": 1,
+    "baseUnit": "本",
+    "nutrients": {
+      "energyKcal": 90,
+      "proteinG": 0.3,
+      "fatG": 0.0,
+      "carbohydrateG": 23.0,
+      "sodiumMEq": 0.51,
+      "potassiumMEq": 0.41,
+      "magnesiumMg": 1,
+      "phosphorusMg": 5,
+      "waterMl": 111.0,
+      "insulinU": 0
+    },
+    "memo": "1本125mL。食塩相当量0.03gからナトリウムmEqへ換算。炭水化物23.0gを登録。",
+    "source": "ニュートリー 公式製品ページ・栄養成分表示（2026-04-28確認）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-04-28T00:00:00+09:00"
+  },
+  {
+    "id": "ons-isocal-clear",
+    "name": "アイソカル クリア",
+    "kana": "あいそかるくりあ",
+    "aliases": [
+      "アイソカルクリア",
+      "isocal clear",
+      "クリア",
+      "あいそかる"
+    ],
+    "category": "クリアタイプ飲料",
+    "tags": [
+      "ONS",
+      "クリアタイプ",
+      "たんぱく質10g",
+      "200kcal",
+      "ネスレ"
+    ],
+    "favorite": true,
+    "baseAmount": 1,
+    "baseUnit": "本",
+    "nutrients": {
+      "energyKcal": 200,
+      "proteinG": 10.0,
+      "fatG": 0.0,
+      "carbohydrateG": 40.0,
+      "sodiumMEq": 0.0,
+      "potassiumMEq": null,
+      "magnesiumMg": null,
+      "phosphorusMg": 180,
+      "waterMl": 166.0,
+      "insulinU": 0
+    },
+    "memo": "1本200mL。炭水化物40.0gを登録。カリウムとマグネシウムは公式ページで確認できないためnull。",
+    "source": "ネスレ ヘルスサイエンス 公式製品ページ・栄養成分表示（2026-04-28確認）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-04-28T00:00:00+09:00"
+  },
+  {
+    "id": "ons-isocal-100-standard",
+    "name": "アイソカル100（標準味：コーヒー等）",
+    "kana": "あいそかるひゃくひょうじゅん",
+    "aliases": [
+      "アイソカル100",
+      "アイソカル 100",
+      "isocal 100",
+      "コーヒー味",
+      "バナナ味",
+      "ストロベリー味",
+      "あずき味",
+      "カフェモカ味",
+      "ミルクティー味"
+    ],
+    "category": "少量高エネルギー飲料",
+    "tags": [
+      "ONS",
+      "少量",
+      "200kcal",
+      "100mL",
+      "ネスレ"
+    ],
+    "favorite": false,
+    "baseAmount": 1,
+    "baseUnit": "本",
+    "nutrients": {
+      "energyKcal": 200,
+      "proteinG": 8.0,
+      "fatG": 8.0,
+      "carbohydrateG": 25.0,
+      "sodiumMEq": 7.09,
+      "potassiumMEq": 4.35,
+      "magnesiumMg": 48,
+      "phosphorusMg": 120,
+      "waterMl": 70.0,
+      "insulinU": 0
+    },
+    "memo": "1本100mL。標準味群（コーヒー、バナナ、ストロベリー、あずき、カフェモカ、ミルクティー）の値。糖質25.0gをcarbohydrateGへ登録。",
+    "source": "ネスレ ヘルスサイエンス 公式製品ページ・栄養成分表示（2026-04-28確認）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-04-28T00:00:00+09:00"
+  },
+  {
+    "id": "ons-isocal-100-cornsoup",
+    "name": "アイソカル100 コーンスープ味",
+    "kana": "あいそかるひゃくこーんすーぷ",
+    "aliases": [
+      "アイソカル100",
+      "アイソカル 100",
+      "isocal 100",
+      "コーンスープ",
+      "corn soup"
+    ],
+    "category": "少量高エネルギー飲料",
+    "tags": [
+      "ONS",
+      "少量",
+      "200kcal",
+      "100mL",
+      "ネスレ"
+    ],
+    "favorite": false,
+    "baseAmount": 1,
+    "baseUnit": "本",
+    "nutrients": {
+      "energyKcal": 200,
+      "proteinG": 8.0,
+      "fatG": 8.0,
+      "carbohydrateG": 25.0,
+      "sodiumMEq": 7.61,
+      "potassiumMEq": 4.35,
+      "magnesiumMg": 48,
+      "phosphorusMg": 120,
+      "waterMl": 70.0,
+      "insulinU": 0
+    },
+    "memo": "1本100mL。コーンスープ味はナトリウムが標準味群と異なるため別項目化。糖質25.0gをcarbohydrateGへ登録。",
+    "source": "ネスレ ヘルスサイエンス 公式製品ページ・栄養成分表示（2026-04-28確認）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-04-28T00:00:00+09:00"
+  },
+  {
+    "id": "ons-isocal-100-potatosoup",
+    "name": "アイソカル100 ポテトスープ味",
+    "kana": "あいそかるひゃくぽてとすーぷ",
+    "aliases": [
+      "アイソカル100",
+      "アイソカル 100",
+      "isocal 100",
+      "ポテトスープ",
+      "potato soup"
+    ],
+    "category": "少量高エネルギー飲料",
+    "tags": [
+      "ONS",
+      "少量",
+      "200kcal",
+      "100mL",
+      "ネスレ"
+    ],
+    "favorite": false,
+    "baseAmount": 1,
+    "baseUnit": "本",
+    "nutrients": {
+      "energyKcal": 200,
+      "proteinG": 8.0,
+      "fatG": 8.0,
+      "carbohydrateG": 25.0,
+      "sodiumMEq": 7.61,
+      "potassiumMEq": 4.6,
+      "magnesiumMg": 48,
+      "phosphorusMg": 120,
+      "waterMl": 70.0,
+      "insulinU": 0
+    },
+    "memo": "1本100mL。ポテトスープ味はカリウムが標準味群と異なるため別項目化。糖質25.0gをcarbohydrateGへ登録。",
+    "source": "ネスレ ヘルスサイエンス 公式製品ページ・栄養成分表示（2026-04-28確認）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-04-28T00:00:00+09:00"
+  },
+  {
+    "id": "ons-isocal-100-caramel",
+    "name": "アイソカル100 キャラメル味",
+    "kana": "あいそかるひゃくきゃらめる",
+    "aliases": [
+      "アイソカル100",
+      "アイソカル 100",
+      "isocal 100",
+      "キャラメル味",
+      "caramel"
+    ],
+    "category": "少量高エネルギー飲料",
+    "tags": [
+      "ONS",
+      "少量",
+      "200kcal",
+      "100mL",
+      "ネスレ"
+    ],
+    "favorite": false,
+    "baseAmount": 1,
+    "baseUnit": "本",
+    "nutrients": {
+      "energyKcal": 200,
+      "proteinG": 8.0,
+      "fatG": 8.0,
+      "carbohydrateG": 25.0,
+      "sodiumMEq": 7.61,
+      "potassiumMEq": 4.35,
+      "magnesiumMg": 48,
+      "phosphorusMg": 120,
+      "waterMl": 70.0,
+      "insulinU": 0
+    },
+    "memo": "1本100mL。キャラメル味はナトリウムが標準味群と異なるため別項目化。糖質25.0gをcarbohydrateGへ登録。",
+    "source": "ネスレ ヘルスサイエンス 公式製品ページ・栄養成分表示（2026-04-28確認）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-04-28T00:00:00+09:00"
+  },
+  {
+    "id": "ons-isocal-jelly-hc-standard",
+    "name": "アイソカル ゼリー ハイカロリー（標準味群）",
+    "kana": "あいそかるぜりーはいかろりーひょうじゅん",
+    "aliases": [
+      "アイソカルゼリー",
+      "アイソカルゼリーハイカロリー",
+      "isocal jelly high calorie",
+      "とうふ味",
+      "スイートポテト味",
+      "チョコレート味",
+      "あずき味",
+      "きなこ味",
+      "コーヒー味",
+      "レアチーズケーキ味",
+      "黒ごま味",
+      "プリン味"
+    ],
+    "category": "高エネルギーゼリー",
+    "tags": [
+      "ONS",
+      "ゼリー",
+      "150kcal",
+      "嚥下",
+      "ネスレ"
+    ],
+    "favorite": false,
+    "baseAmount": 1,
+    "baseUnit": "個",
+    "nutrients": {
+      "energyKcal": 150,
+      "proteinG": 3.0,
+      "fatG": 7.9,
+      "carbohydrateG": 16.8,
+      "sodiumMEq": 2.57,
+      "potassiumMEq": 0.51,
+      "magnesiumMg": null,
+      "phosphorusMg": 28,
+      "waterMl": 38.0,
+      "insulinU": 0
+    },
+    "memo": "1個66g。標準味群の分析値。マグネシウムは公式ページで確認できないためnull。炭水化物16.8gを登録。",
+    "source": "ネスレ ヘルスサイエンス 公式製品ページ・栄養成分表示（2026-04-28確認）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-04-28T00:00:00+09:00"
+  },
+  {
+    "id": "ons-isocal-jelly-hc-kokuto",
+    "name": "アイソカル ゼリー ハイカロリー 黒糖風味",
+    "kana": "あいそかるぜりーはいかろりーこくとうふうみ",
+    "aliases": [
+      "アイソカルゼリー",
+      "アイソカルゼリーハイカロリー",
+      "黒糖風味",
+      "こくとう",
+      "isocal jelly high calorie"
+    ],
+    "category": "高エネルギーゼリー",
+    "tags": [
+      "ONS",
+      "ゼリー",
+      "150kcal",
+      "嚥下",
+      "ネスレ"
+    ],
+    "favorite": false,
+    "baseAmount": 1,
+    "baseUnit": "個",
+    "nutrients": {
+      "energyKcal": 150,
+      "proteinG": 3.0,
+      "fatG": 7.9,
+      "carbohydrateG": 16.8,
+      "sodiumMEq": 3.26,
+      "potassiumMEq": 0.66,
+      "magnesiumMg": null,
+      "phosphorusMg": 28,
+      "waterMl": 38.0,
+      "insulinU": 0
+    },
+    "memo": "1個66g。黒糖風味はナトリウムとカリウムが標準味群と異なるため別項目化。マグネシウムはnull。",
+    "source": "ネスレ ヘルスサイエンス 公式製品ページ・栄養成分表示（2026-04-28確認）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-04-28T00:00:00+09:00"
+  },
+  {
+    "id": "ons-isocal-jelly-hc-apple-peach",
+    "name": "アイソカル ゼリー ハイカロリー りんご・もも味",
+    "kana": "あいそかるぜりーはいかろりーりんごもも",
+    "aliases": [
+      "アイソカルゼリー",
+      "アイソカルゼリーハイカロリー",
+      "りんご味",
+      "もも味",
+      "isocal jelly high calorie"
+    ],
+    "category": "高エネルギーゼリー",
+    "tags": [
+      "ONS",
+      "ゼリー",
+      "150kcal",
+      "嚥下",
+      "ネスレ"
+    ],
+    "favorite": false,
+    "baseAmount": 1,
+    "baseUnit": "個",
+    "nutrients": {
+      "energyKcal": 150,
+      "proteinG": 3.0,
+      "fatG": 7.9,
+      "carbohydrateG": 16.8,
+      "sodiumMEq": 3.13,
+      "potassiumMEq": 0.19,
+      "magnesiumMg": null,
+      "phosphorusMg": 46,
+      "waterMl": 38.0,
+      "insulinU": 0
+    },
+    "memo": "1個66g。りんご味・もも味の分析値。マグネシウムは公式ページで確認できないためnull。炭水化物16.8gを登録。",
+    "source": "ネスレ ヘルスサイエンス 公式製品ページ・栄養成分表示（2026-04-28確認）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-04-28T00:00:00+09:00"
+  },
+  {
+    "id": "ons-isocal-jelly-more-hc",
+    "name": "アイソカル ゼリー もっとハイカロリー",
+    "kana": "あいそかるぜりーもっとはいかろりー",
+    "aliases": [
+      "アイソカルゼリーもっとハイカロリー",
+      "もっとハイカロリー",
+      "isocal jelly more high calorie",
+      "MCTゼリー"
+    ],
+    "category": "超高エネルギーゼリー",
+    "tags": [
+      "ONS",
+      "ゼリー",
+      "200kcal",
+      "50g",
+      "MCT",
+      "ネスレ"
+    ],
+    "favorite": false,
+    "baseAmount": 1,
+    "baseUnit": "個",
+    "nutrients": {
+      "energyKcal": 200,
+      "proteinG": 4.0,
+      "fatG": 14.2,
+      "carbohydrateG": 14.0,
+      "sodiumMEq": 3.35,
+      "potassiumMEq": null,
+      "magnesiumMg": null,
+      "phosphorusMg": 50,
+      "waterMl": 17.0,
+      "insulinU": 0
+    },
+    "memo": "1個50g。カリウムとマグネシウムは公式ページで確認できないためnull。炭水化物14.0gを登録。",
+    "source": "ネスレ ヘルスサイエンス 公式製品ページ・栄養成分表示（2026-04-28確認）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-04-28T00:00:00+09:00"
+  },
+  {
+    "id": "ons-enerich-160",
+    "name": "エネリッチ160",
+    "kana": "えねりっちひゃくろくじゅう",
+    "aliases": [
+      "エネリッチ",
+      "エネリッチ160",
+      "Enerich",
+      "enerich 160"
+    ],
+    "category": "高エネルギーゼリー",
+    "tags": [
+      "ONS",
+      "ゼリー",
+      "160kcal",
+      "たんぱく質0g",
+      "フードケア"
+    ],
+    "favorite": true,
+    "baseAmount": 1,
+    "baseUnit": "個",
+    "nutrients": {
+      "energyKcal": 160,
+      "proteinG": 0.0,
+      "fatG": 0.0,
+      "carbohydrateG": 39.9,
+      "sodiumMEq": 1.57,
+      "potassiumMEq": 0.01,
+      "magnesiumMg": null,
+      "phosphorusMg": 2,
+      "waterMl": 42.9,
+      "insulinU": 0
+    },
+    "memo": "1個83g。糖質39.9gをcarbohydrateGへ登録。マグネシウムは公式ページで確認できないためnull。",
+    "source": "株式会社フードケア 公式製品ページ・栄養成分表示（2026-04-28確認）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-04-28T00:00:00+09:00"
+  },
+  {
+    "id": "ons-caloriemate-jelly-apple",
+    "name": "カロリーメイトゼリー アップル味",
+    "kana": "かろりーめいとぜりーあっぷる",
+    "aliases": [
+      "カロリーメイトゼリー",
+      "カロリーメイト アップル",
+      "calorie mate jelly",
+      "apple"
+    ],
+    "category": "バランス栄養ゼリー",
+    "tags": [
+      "ONS",
+      "ゼリー",
+      "200kcal",
+      "大塚製薬"
+    ],
+    "favorite": true,
+    "baseAmount": 1,
+    "baseUnit": "袋",
+    "nutrients": {
+      "energyKcal": 200,
+      "proteinG": 8.2,
+      "fatG": 4.4,
+      "carbohydrateG": 31.2,
+      "sodiumMEq": 1.37,
+      "potassiumMEq": 1.38,
+      "magnesiumMg": 50,
+      "phosphorusMg": 175,
+      "waterMl": null,
+      "insulinU": 0
+    },
+    "memo": "1袋215g。糖質31.2gをcarbohydrateGへ登録。水分は公式ページで確認できないためnull。食塩相当量0.08gからナトリウムmEqへ換算。",
+    "source": "大塚製薬 公式製品ページ・栄養成分表示（2026-04-28確認）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-04-28T00:00:00+09:00"
+  },
+  {
+    "id": "ons-caloriemate-jelly-lime-grapefruit",
+    "name": "カロリーメイトゼリー ライム＆グレープフルーツ味",
+    "kana": "かろりーめいとぜりーらいむあんどぐれーぷふるーつ",
+    "aliases": [
+      "カロリーメイトゼリー",
+      "カロリーメイト ライム",
+      "グレープフルーツ",
+      "calorie mate jelly",
+      "lime grapefruit"
+    ],
+    "category": "バランス栄養ゼリー",
+    "tags": [
+      "ONS",
+      "ゼリー",
+      "200kcal",
+      "大塚製薬"
+    ],
+    "favorite": false,
+    "baseAmount": 1,
+    "baseUnit": "袋",
+    "nutrients": {
+      "energyKcal": 200,
+      "proteinG": 8.2,
+      "fatG": 4.4,
+      "carbohydrateG": 31.2,
+      "sodiumMEq": 2.06,
+      "potassiumMEq": 0.28,
+      "magnesiumMg": 50,
+      "phosphorusMg": 165,
+      "waterMl": null,
+      "insulinU": 0
+    },
+    "memo": "1袋215g。糖質31.2gをcarbohydrateGへ登録。水分は公式ページで確認できないためnull。食塩相当量0.12gからナトリウムmEqへ換算。",
+    "source": "大塚製薬 公式製品ページ・栄養成分表示（2026-04-28確認）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-04-28T00:00:00+09:00"
+  },
+  {
+    "id": "ons-caloriemate-jelly-fruity-milk",
+    "name": "カロリーメイトゼリー フルーティミルク味",
+    "kana": "かろりーめいとぜりーふるーてぃみるく",
+    "aliases": [
+      "カロリーメイトゼリー",
+      "カロリーメイト フルーティミルク",
+      "calorie mate jelly",
+      "fruity milk"
+    ],
+    "category": "バランス栄養ゼリー",
+    "tags": [
+      "ONS",
+      "ゼリー",
+      "200kcal",
+      "大塚製薬"
+    ],
+    "favorite": false,
+    "baseAmount": 1,
+    "baseUnit": "袋",
+    "nutrients": {
+      "energyKcal": 200,
+      "proteinG": 8.2,
+      "fatG": 4.4,
+      "carbohydrateG": 31.2,
+      "sodiumMEq": 2.91,
+      "potassiumMEq": 0.31,
+      "magnesiumMg": 50,
+      "phosphorusMg": 190,
+      "waterMl": null,
+      "insulinU": 0
+    },
+    "memo": "1袋215g。糖質31.2gをcarbohydrateGへ登録。水分は公式ページで確認できないためnull。食塩相当量0.17gからナトリウムmEqへ換算。",
+    "source": "大塚製薬 公式製品ページ・栄養成分表示（2026-04-28確認）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-04-28T00:00:00+09:00"
+  },
+  {
+    "id": "ons-caloriemate-jelly-100kcal-apple",
+    "name": "カロリーメイトゼリー100kcal アップル味",
+    "kana": "かろりーめいとぜりーひゃっきろかろりーあっぷる",
+    "aliases": [
+      "カロリーメイトゼリー100",
+      "カロリーメイト100kcal",
+      "100kcalアップル",
+      "calorie mate jelly 100"
+    ],
+    "category": "バランス栄養ゼリー",
+    "tags": [
+      "ONS",
+      "ゼリー",
+      "100kcal",
+      "大塚製薬"
+    ],
+    "favorite": false,
+    "baseAmount": 1,
+    "baseUnit": "袋",
+    "nutrients": {
+      "energyKcal": 100,
+      "proteinG": 5.0,
+      "fatG": 2.2,
+      "carbohydrateG": 15.6,
+      "sodiumMEq": 0.69,
+      "potassiumMEq": 0.61,
+      "magnesiumMg": 16,
+      "phosphorusMg": 73,
+      "waterMl": null,
+      "insulinU": 0
+    },
+    "memo": "1袋180g。糖質15.6gをcarbohydrateGへ登録。水分は公式ページで確認できないためnull。食塩相当量0.04gからナトリウムmEqへ換算。",
+    "source": "大塚製薬 公式製品ページ・栄養成分表示（2026-04-28確認）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-04-28T00:00:00+09:00"
+  },
+  {
+    "id": "ons-enjoy-climeal",
+    "name": "エンジョイクリミール",
+    "kana": "えんじょいくりみーる",
+    "aliases": [
+      "クリミール",
+      "エンジョイクリミール",
+      "Enjoy Climeal",
+      "climeal"
+    ],
+    "category": "高エネルギー飲料",
+    "tags": [
+      "ONS",
+      "高エネルギー",
+      "200kcal",
+      "たんぱく質7.5g",
+      "クリニコ"
+    ],
+    "favorite": true,
+    "baseAmount": 1,
+    "baseUnit": "本",
+    "nutrients": {
+      "energyKcal": 200,
+      "proteinG": 7.5,
+      "fatG": 6.7,
+      "carbohydrateG": 26.8,
+      "sodiumMEq": 4.8,
+      "potassiumMEq": 4.6,
+      "magnesiumMg": 33,
+      "phosphorusMg": 129,
+      "waterMl": 94.0,
+      "insulinU": 0
+    },
+    "memo": "1本125mL。糖質26.8gをcarbohydrateGへ登録。ナトリウムとカリウムは公式標準組成のmEq値を使用。",
+    "source": "森永乳業クリニコ 公式製品ページ・標準組成（2026-04-28確認）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-04-28T00:00:00+09:00"
+  },
+  {
+    "id": "ons-enjoy-sukkiri-climeal",
+    "name": "エンジョイすっきりクリミール",
+    "kana": "えんじょいすっきりくりみーる",
+    "aliases": [
+      "すっきりクリミール",
+      "エンジョイすっきり",
+      "Enjoy Sukkiri Climeal",
+      "すっきり"
+    ],
+    "category": "クリアタイプ高エネルギー飲料",
+    "tags": [
+      "ONS",
+      "クリアタイプ",
+      "200kcal",
+      "たんぱく質7.5g",
+      "クリニコ"
+    ],
+    "favorite": false,
+    "baseAmount": 1,
+    "baseUnit": "本",
+    "nutrients": {
+      "energyKcal": 200,
+      "proteinG": 7.5,
+      "fatG": 0.0,
+      "carbohydrateG": 42.1,
+      "sodiumMEq": null,
+      "potassiumMEq": 0.0,
+      "magnesiumMg": 0.0,
+      "phosphorusMg": 1,
+      "waterMl": 93.0,
+      "insulinU": 0
+    },
+    "memo": "1本125mL。糖質42.1gをcarbohydrateGへ登録。ナトリウムは0〜80mgの範囲表示のためsodiumMEqはnull。角括弧付き参考値はそのまま登録。",
+    "source": "森永乳業クリニコ 公式製品ページ・標準組成（2026-04-28確認）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-04-28T00:00:00+09:00"
+  },
+  {
+    "id": "ons-enjoy-argina",
+    "name": "エンジョイArgina",
+    "kana": "えんじょいあるぎーな",
+    "aliases": [
+      "エンジョイアルギーナ",
+      "Argina",
+      "アルギーナ",
+      "Enjoy Argina"
+    ],
+    "category": "アルギニン含有飲料",
+    "tags": [
+      "ONS",
+      "アルギニン",
+      "コラーゲンペプチド",
+      "200kcal",
+      "クリニコ"
+    ],
+    "favorite": false,
+    "baseAmount": 1,
+    "baseUnit": "本",
+    "nutrients": {
+      "energyKcal": 200,
+      "proteinG": 7.5,
+      "fatG": 0.0,
+      "carbohydrateG": 42.5,
+      "sodiumMEq": null,
+      "potassiumMEq": 0.05,
+      "magnesiumMg": 0.6,
+      "phosphorusMg": 0,
+      "waterMl": 94.0,
+      "insulinU": 0
+    },
+    "memo": "1本125mL。炭水化物42.5gを登録。ナトリウムは10〜40mgの範囲表示のためsodiumMEqはnull。アルギニン2.5g、コラーゲンペプチド5.3g含有。",
+    "source": "森永乳業クリニコ 公式製品ページ・標準組成（2026-04-28確認）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-04-28T00:00:00+09:00"
+  },
+  {
+    "id": "ons-enjoy-jelly-plus",
+    "name": "エンジョイゼリープラス",
+    "kana": "えんじょいぜりーぷらす",
+    "aliases": [
+      "エンジョイゼリープラス",
+      "ゼリープラス",
+      "Enjoy Jelly Plus"
+    ],
+    "category": "高エネルギーゼリー",
+    "tags": [
+      "ONS",
+      "ゼリー",
+      "360kcal",
+      "たんぱく質14.4g",
+      "クリニコ"
+    ],
+    "favorite": false,
+    "baseAmount": 1,
+    "baseUnit": "個",
+    "nutrients": {
+      "energyKcal": 360,
+      "proteinG": 14.4,
+      "fatG": 16.0,
+      "carbohydrateG": 40.0,
+      "sodiumMEq": 7.39,
+      "potassiumMEq": 9.46,
+      "magnesiumMg": 24,
+      "phosphorusMg": 220,
+      "waterMl": 148.0,
+      "insulinU": 0
+    },
+    "memo": "1個220g。炭水化物40.0gを登録。マグネシウムは公式標準組成の角括弧付き参考値を登録。",
+    "source": "森永乳業クリニコ 公式製品ページ・標準組成（2026-04-28確認）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-04-28T00:00:00+09:00"
+  },
+  {
+    "id": "ons-enjoy-mct-jelly-200-standard",
+    "name": "エンジョイMCTゼリー200（標準・スープ系）",
+    "kana": "えんじょいえむしーてぃーぜりーにひゃくひょうじゅん",
+    "aliases": [
+      "エンジョイMCTゼリー",
+      "MCTゼリー200",
+      "あずき味",
+      "コーヒー味",
+      "バナナ味",
+      "プリン味",
+      "くり味",
+      "コーンクリーム味"
+    ],
+    "category": "高エネルギーゼリー",
+    "tags": [
+      "ONS",
+      "ゼリー",
+      "MCT",
+      "200kcal",
+      "クリニコ"
+    ],
+    "favorite": false,
+    "baseAmount": 1,
+    "baseUnit": "個",
+    "nutrients": {
+      "energyKcal": 200,
+      "proteinG": 4.0,
+      "fatG": 13.0,
+      "carbohydrateG": 16.8,
+      "sodiumMEq": null,
+      "potassiumMEq": 1.38,
+      "magnesiumMg": 4,
+      "phosphorusMg": 31,
+      "waterMl": 38.0,
+      "insulinU": 0
+    },
+    "memo": "1個72g。あずき・コーヒー・バナナ・プリン・くり・コーンクリーム系。ナトリウムは8〜54mgの範囲表示のためsodiumMEqはnull。炭水化物16.8gを登録。",
+    "source": "森永乳業クリニコ 公式製品ページ・標準組成（2026-04-28確認）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-04-28T00:00:00+09:00"
+  },
+  {
+    "id": "ons-enjoy-mct-jelly-200-fruit-yogurt",
+    "name": "エンジョイMCTゼリー200（果実・ヨーグルト系）",
+    "kana": "えんじょいえむしーてぃーぜりーにひゃくくだものよーぐると",
+    "aliases": [
+      "エンジョイMCTゼリー",
+      "MCTゼリー200",
+      "いちご味",
+      "もも味",
+      "ゴールドキウイ味",
+      "ヨーグルト味"
+    ],
+    "category": "高エネルギーゼリー",
+    "tags": [
+      "ONS",
+      "ゼリー",
+      "MCT",
+      "200kcal",
+      "クリニコ"
+    ],
+    "favorite": false,
+    "baseAmount": 1,
+    "baseUnit": "個",
+    "nutrients": {
+      "energyKcal": 200,
+      "proteinG": 4.0,
+      "fatG": 13.0,
+      "carbohydrateG": 16.8,
+      "sodiumMEq": null,
+      "potassiumMEq": 0.54,
+      "magnesiumMg": 1,
+      "phosphorusMg": 6,
+      "waterMl": 38.1,
+      "insulinU": 0
+    },
+    "memo": "1個72g。いちご・もも・ゴールドキウイ・ヨーグルト系。ナトリウムは5〜34mgの範囲表示のためsodiumMEqはnull。炭水化物16.8gを登録。",
+    "source": "森永乳業クリニコ 公式製品ページ・標準組成（2026-04-28確認）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-04-28T00:00:00+09:00"
+  },
+  {
+    "id": "ons-enjoy-highcalorie-climeal-300-coffee-banana",
+    "name": "エンジョイハイカロリークリミール300 コーヒー・バナナ味",
+    "kana": "えんじょいはいかろりーくりみーるさんびゃくこーひーばなな",
+    "aliases": [
+      "ハイカロリークリミール300",
+      "クリミール300",
+      "高カロリークリミール",
+      "コーヒー味",
+      "バナナ味",
+      "Enjoy High Calorie Climeal"
+    ],
+    "category": "超高エネルギー飲料",
+    "tags": [
+      "ONS",
+      "少量",
+      "300kcal",
+      "MCT",
+      "クリニコ"
+    ],
+    "favorite": false,
+    "baseAmount": 1,
+    "baseUnit": "本",
+    "nutrients": {
+      "energyKcal": 300,
+      "proteinG": 7.5,
+      "fatG": 17.8,
+      "carbohydrateG": 26.8,
+      "sodiumMEq": 4.8,
+      "potassiumMEq": 4.6,
+      "magnesiumMg": 33,
+      "phosphorusMg": 129,
+      "waterMl": 82.0,
+      "insulinU": 0
+    },
+    "memo": "1本125mL。コーヒー味・バナナ味。糖質26.8gをcarbohydrateGへ登録。ナトリウムとカリウムは公式標準組成のmEq値を使用。",
+    "source": "森永乳業クリニコ 公式製品ページ・標準組成（2026-04-28確認）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-04-28T00:00:00+09:00"
+  },
+  {
+    "id": "ons-enjoy-highcalorie-climeal-300-cornsoup",
+    "name": "エンジョイハイカロリークリミール300 コーンスープ味",
+    "kana": "えんじょいはいかろりーくりみーるさんびゃくこーんすーぷ",
+    "aliases": [
+      "ハイカロリークリミール300",
+      "クリミール300",
+      "高カロリークリミール",
+      "コーンスープ味",
+      "Enjoy High Calorie Climeal"
+    ],
+    "category": "超高エネルギー飲料",
+    "tags": [
+      "ONS",
+      "少量",
+      "300kcal",
+      "MCT",
+      "クリニコ"
+    ],
+    "favorite": false,
+    "baseAmount": 1,
+    "baseUnit": "本",
+    "nutrients": {
+      "energyKcal": 300,
+      "proteinG": 7.5,
+      "fatG": 17.8,
+      "carbohydrateG": 26.8,
+      "sodiumMEq": 7.0,
+      "potassiumMEq": 4.6,
+      "magnesiumMg": 33,
+      "phosphorusMg": 129,
+      "waterMl": 82.0,
+      "insulinU": 0
+    },
+    "memo": "1本125mL。コーンスープ味はナトリウムがコーヒー・バナナ味と異なるため別項目化。糖質26.8gをcarbohydrateGへ登録。",
+    "source": "森永乳業クリニコ 公式製品ページ・標準組成（2026-04-28確認）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-04-28T00:00:00+09:00"
+  },
+  {
+    "id": "ons-enjoy-climeal-fiber-plus",
+    "name": "エンジョイクリミールFiber＋",
+    "kana": "えんじょいくりみーるふぁいばーぷらす",
+    "aliases": [
+      "エンジョイクリミールファイバー",
+      "クリミールFiber",
+      "クリミールファイバー",
+      "Fiber+",
+      "Enjoy Climeal Fiber"
+    ],
+    "category": "食物繊維強化飲料",
+    "tags": [
+      "ONS",
+      "食物繊維",
+      "200kcal",
+      "MCT",
+      "クリニコ"
+    ],
+    "favorite": false,
+    "baseAmount": 1,
+    "baseUnit": "本",
+    "nutrients": {
+      "energyKcal": 200,
+      "proteinG": 7.5,
+      "fatG": 8.9,
+      "carbohydrateG": 21.1,
+      "sodiumMEq": 4.8,
+      "potassiumMEq": 4.6,
+      "magnesiumMg": 33,
+      "phosphorusMg": 129,
+      "waterMl": 93.0,
+      "insulinU": 0
+    },
+    "memo": "1本125mL。糖質21.1gをcarbohydrateGへ登録。難消化性デキストリンを含む食物繊維6.5g。",
+    "source": "森永乳業クリニコ 公式製品ページ・標準組成（2026-04-28確認）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-04-28T00:00:00+09:00"
+  },
+  {
+    "id": "ons-enjoy-small-highcalorie-jelly",
+    "name": "エンジョイ小さなハイカロリーゼリー",
+    "kana": "えんじょいちいさなはいかろりーぜりー",
+    "aliases": [
+      "小さなハイカロリーゼリー",
+      "ちいさなハイカロリー",
+      "エンジョイ小さな",
+      "Enjoy small high calorie jelly"
+    ],
+    "category": "少量高エネルギーゼリー",
+    "tags": [
+      "ONS",
+      "ゼリー",
+      "100kcal",
+      "40g",
+      "BCAA",
+      "クリニコ"
+    ],
+    "favorite": false,
+    "baseAmount": 1,
+    "baseUnit": "個",
+    "nutrients": {
+      "energyKcal": 100,
+      "proteinG": 5.0,
+      "fatG": 4.4,
+      "carbohydrateG": 10.2,
+      "sodiumMEq": null,
+      "potassiumMEq": 0.23,
+      "magnesiumMg": 1,
+      "phosphorusMg": 7,
+      "waterMl": 20.3,
+      "insulinU": 0
+    },
+    "memo": "1個40g。ナトリウムは4〜22mgの範囲表示のためsodiumMEqはnull。炭水化物10.2gを登録。BCAAは分岐鎖アミノ酸。",
+    "source": "森永乳業クリニコ 公式製品ページ・標準組成（2026-04-28確認）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-04-28T00:00:00+09:00"
+  },
+  {
+    "id": "ons-janef-finecare",
+    "name": "ジャネフ ファインケア／すっきりテイスト",
+    "kana": "じゃねふふぁいんけあすっきりていすと",
+    "aliases": [
+      "ファインケア",
+      "ジャネフファインケア",
+      "ファインケアすっきり",
+      "FineCare",
+      "すっきりテイスト"
+    ],
+    "category": "高エネルギー飲料",
+    "tags": [
+      "ONS",
+      "高エネルギー",
+      "200kcal",
+      "たんぱく質7.5g",
+      "キユーピー"
+    ],
+    "favorite": true,
+    "baseAmount": 1,
+    "baseUnit": "本",
+    "nutrients": {
+      "energyKcal": 200,
+      "proteinG": 7.5,
+      "fatG": 7.5,
+      "carbohydrateG": 25.6,
+      "sodiumMEq": 6.09,
+      "potassiumMEq": 3.32,
+      "magnesiumMg": 25,
+      "phosphorusMg": 90,
+      "waterMl": 94.8,
+      "insulinU": 0
+    },
+    "memo": "1本125mL。公式ページで糖質が明記されていないため炭水化物25.6gをcarbohydrateGへ登録。水分は水分94.8gをmL相当として登録。",
+    "source": "キユーピー ジャネフ 公式製品ページ・栄養成分表示（2026-04-28確認）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-04-28T00:00:00+09:00"
+  },
+  {
+    "id": "ons-alimoa-sweet-citrus",
+    "name": "アリモア スイートシトラス風味",
+    "kana": "ありもあすいーとしとらすふうみ",
+    "aliases": [
+      "アリモア",
+      "アリモアスイートシトラス",
+      "アリモア スイートシトラス",
+      "ALIMOA",
+      "alimoa",
+      "スイートシトラス",
+      "ありもあ"
+    ],
+    "category": "クリアタイプ高エネルギー飲料",
+    "tags": [
+      "ONS",
+      "クリアタイプ",
+      "220kcal",
+      "たんぱく質10g",
+      "ニュートリー"
+    ],
+    "favorite": false,
+    "baseAmount": 1,
+    "baseUnit": "本",
+    "nutrients": {
+      "energyKcal": 220,
+      "proteinG": 10.0,
+      "fatG": 0.0,
+      "carbohydrateG": 45.0,
+      "sodiumMEq": 1.37,
+      "potassiumMEq": 0.05,
+      "magnesiumMg": null,
+      "phosphorusMg": 0,
+      "waterMl": 90.0,
+      "insulinU": 0
+    },
+    "memo": "1本125mL。炭水化物45.0gを登録。食塩相当量0.08gからナトリウムmEqへ換算。カリウム1.9mgとリン0mgは参考値。マグネシウムは公式ページで確認できないためnull。",
+    "source": "ニュートリー アリモア 公式製品ページ・栄養成分表示（2026-05-26確認）",
+    "sourceStatus": "verified",
+    "updatedAt": "2026-05-26T00:00:00+09:00"
+  }
+]
