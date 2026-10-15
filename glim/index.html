@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#fbf9f7">
+<meta name="color-scheme" content="light">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="体重減少率">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="現在体重・BMIと4時点の体重を入力。体重減少率を即時表示。ページ内の数字キーと次へキーを常時表示。">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data:; connect-src 'none'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<title>体重減少率 | GLIM v2</title>
+<style>
+:root {
+  color-scheme: light;
+  --paper:#fbf9f7; --ink:#38323c; --muted:#756b77; --line:#e4dce3;
+  --accent:#805b81; --tint:#f1eaf2; --pink:#b87d92; --error:#a33252;
+  --numbers:ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+}
+*,*::before,*::after {box-sizing:border-box}
+html {height:100%; -webkit-text-size-adjust:100%}
+body {margin:0; height:100vh; height:100dvh; overflow:hidden; display:flex; flex-direction:column; color:var(--ink); background:var(--paper); font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif; -webkit-font-smoothing:antialiased}
+button,input {font:inherit; -webkit-tap-highlight-color:transparent}
+button {appearance:none; border-radius:0; cursor:pointer; touch-action:manipulation}
+button:focus-visible {outline:2px solid var(--accent); outline-offset:2px}
+[hidden] {display:none !important}
+.scroll-area {flex:1; min-height:0; overflow:auto; overscroll-behavior-y:contain; scroll-padding:12px; -webkit-overflow-scrolling:touch}
+main {width:min(100%,600px); margin:0 auto; padding:28px 22px max(20px,env(safe-area-inset-bottom))}
+header {display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:20px}
+.title-line {display:flex; align-items:baseline; gap:12px}
+h1 {margin:0; font-size:25px; font-weight:650; letter-spacing:.01em; line-height:1.4}
+.eyebrow {font:600 10px/1 var(--numbers); letter-spacing:.14em; color:var(--accent)}
+.reset {background:none; border:0; color:var(--muted); min-height:44px; padding:8px 0 8px 12px; font-size:12px; text-decoration:underline; text-underline-offset:5px}
+.current {display:grid; grid-template-columns:1fr 1fr; gap:18px; border-top:2px solid var(--pink); padding:17px 0 19px}
+.current label {display:block; font-size:13px; font-weight:600; line-height:1.4; margin-bottom:8px}
+.field {min-width:0}
+.input-line {display:flex; align-items:center; gap:5px; min-width:0; padding:0 10px; border-bottom:1px solid #c9baca; background:var(--tint)}
+.field.active .input-line,.input-line:focus-within {background:#eadfec; border-bottom:2px solid var(--accent); padding-bottom:0; margin-bottom:-1px}
+input {width:100%; min-width:0; height:50px; padding:5px 0; border:0; border-radius:0; background:transparent; color:var(--ink); -webkit-text-fill-color:var(--ink); outline:none; appearance:none; font:450 29px/1.1 var(--numbers); font-variant-numeric:tabular-nums; letter-spacing:-.035em; text-align:right; caret-color:var(--accent)}
+input::placeholder {color:#b5a8b7; -webkit-text-fill-color:#b5a8b7; opacity:1; font-weight:300}
+input::selection {background:#d7bedc; color:var(--ink)}
+input[readonly] {cursor:pointer; -webkit-touch-callout:none}
+input[data-length="long"] {font-size:20px}
+input[data-length="very-long"] {font-size:15px}
+.unit {flex:0 0 auto; color:var(--muted); font:12px/1 var(--numbers); white-space:nowrap}
+.history-head,.history-row {display:grid; grid-template-columns:minmax(0,1fr) 116px 120px; gap:16px; align-items:center}
+.history-head {font-size:11px; color:var(--muted); padding:0 0 9px; border-bottom:1px solid var(--line)}
+.history-head span:not(:first-child) {text-align:right}
+.history-head span:nth-child(2) {padding-right:10px}
+.history-row {min-height:73px; padding:12px 0; border-bottom:1px solid var(--line); scroll-margin:10px}
+.history-row label {font-size:14px; font-weight:550; line-height:1.4; cursor:pointer}
+.history-row label small {display:block; margin-top:4px; color:var(--muted); font-size:10px; font-weight:400}
+.history-row input {height:46px; font-size:24px}
+.history-row .input-line {background:#f5f0f5}
+.history-row input[data-length="long"] {font-size:17px}
+.history-row input[data-length="very-long"] {font-size:11px}
+.history-row .field.active .input-line,.history-row .input-line:focus-within {background:#eadfec}
+.result {display:flex; justify-content:flex-end; align-items:baseline; gap:3px; min-width:0; white-space:nowrap}
+.result-number {font:500 33px/1.1 var(--numbers); font-variant-numeric:tabular-nums; letter-spacing:-.045em; color:var(--accent)}
+.result-unit {font:12px/1 var(--numbers); color:var(--muted)}
+.result[data-state="empty"] .result-number {color:#b9aebe; font-weight:300}
+.result[data-state="gain"] .result-number,.result[data-state="zero"] .result-number {color:var(--ink)}
+.result[data-length="long"] .result-number {font-size:23px}
+.result[data-length="very-long"] .result-number {font-size:16px}
+.error {display:none; font-size:10px; line-height:1.4; color:var(--error); margin-top:4px}
+.field[data-invalid="true"] .error {display:block}
+.field[data-invalid="true"] .input-line {border-bottom-color:var(--error); background:#faedf1}
+footer {color:var(--muted); font-size:10px; line-height:1.75; margin-top:12px}
+footer p {margin:0}
+.sr-only {position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap}
+.keypad {flex:none; background:#f0e9f0; border-top:1px solid #d9ccd9; padding:0 max(12px,env(safe-area-inset-right)) max(8px,env(safe-area-inset-bottom)) max(12px,env(safe-area-inset-left)); user-select:none; -webkit-user-select:none; -webkit-touch-callout:none}
+.keypad-inner {max-width:556px; margin:0 auto}
+.pad-bar {display:flex; align-items:center; justify-content:space-between; min-height:38px; gap:10px}
+#pad-label {font-size:12px; font-weight:600; color:#6f536f; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+.close-pad {height:38px; min-width:60px; padding:0 0 0 12px; border:0; background:none; color:var(--muted); font-size:11px}
+.keys {display:grid; grid-template-columns:repeat(3,minmax(0,1fr)) 1.06fr; grid-template-rows:repeat(4,50px); gap:6px}
+.key {display:flex; align-items:center; justify-content:center; min-width:0; min-height:44px; padding:0; border:1px solid #e4dbe5; background:#fffcff; color:var(--ink); font:450 25px/1 var(--numbers)}
+.key:active {background:#dfd0e2; border-color:#bf9fc6}
+.key-small {font-size:13px; background:#e7dce9; border-color:#e7dce9}
+.key-back {font-size:24px; background:#e7dce9; border-color:#e7dce9}
+.key-enter {grid-column:4; grid-row:3 / 5; display:flex; flex-direction:column; gap:9px; background:var(--accent); border-color:var(--accent); color:white}
+.key-enter:active {background:#69496c; border-color:#69496c}
+.enter-symbol {font:500 30px/1 var(--numbers)}
+#enter-text {font-size:14px; line-height:1.2; font-weight:600}
+.key:disabled {opacity:.38; cursor:default}
+.error-message {color:var(--error)}
+.boot-message {margin:0 0 14px; padding:10px 0; color:var(--error); font-size:12px; line-height:1.7; border-block:1px solid var(--error)}
+.boot-message strong {display:block; font-size:14px}
+#enter-text {font-size:17px; white-space:nowrap}
+.keypad:focus-within {outline:none}
+@media (max-width:480px) {
+  main {padding:15px 18px max(18px,env(safe-area-inset-bottom))}
+  header {margin-bottom:11px}
+  h1 {font-size:23px}
+  .title-line {gap:10px}
+  .current {gap:16px; padding:13px 0 16px}
+  .current label {margin-bottom:6px}
+  .history-head,.history-row {grid-template-columns:minmax(0,1fr) 94px 97px; gap:11px}
+  .history-row {min-height:61px; padding:8px 0}
+  .history-row label {font-size:13px}
+  .history-row input {height:43px; font-size:23px}
+  .input-line {padding:0 8px; gap:3px}
+  .result-number {font-size:30px}
+  .result[data-length="long"] .result-number {font-size:21px}
+  .result[data-length="very-long"] .result-number {font-size:14px}
+}
+@media (max-width:359px) {
+  main {padding-left:14px; padding-right:14px}
+  .history-head,.history-row {grid-template-columns:minmax(0,1fr) 81px 85px; gap:8px}
+  .history-head {font-size:10px}
+  .history-row label {font-size:12px}
+  .history-row label small {font-size:9px}
+  .history-row input {font-size:21px}
+  .result-number {font-size:27px}
+  .unit,.result-unit {font-size:11px}
+  .keys {gap:5px}
+}
+@media (max-height:720px) {
+  .keys {grid-template-rows:repeat(4,44px); gap:5px}
+  .pad-bar,.close-pad {height:34px; min-height:34px}
+  .keypad {padding-bottom:max(6px,env(safe-area-inset-bottom))}
+  body.editing main {padding-top:8px}
+  body.editing header {margin-bottom:7px}
+}
+@media print {
+  body {height:auto; overflow:visible; display:block; background:white}
+  .scroll-area {overflow:visible}
+  .keypad,.reset {display:none !important}
+  main {padding:20px}
+  .input-line {background:none !important}
+  .result-number {color:black}
+}
+</style>
+</head>
+<body>
+<div class="scroll-area" id="scroll-area">
+<main>
+  <header>
+    <div class="title-line"><h1>体重減少率</h1><span class="eyebrow">GLIM · v2</span></div>
+    <button class="reset" id="reset" type="button" disabled aria-label="すべての入力をクリア">クリア</button>
+  </header>
+  <div class="boot-message" id="boot-message" role="status"><strong>計算が起動していません</strong>この表示が残る場合は、この閲覧画面ではツールを実行できていません。JavaScriptが動作するブラウザ環境で開いてください。</div>
+  <form id="calculator" autocomplete="off" novalidate>
+    <div class="current">
+      <div class="field" id="field-current">
+        <label for="current">現在体重</label>
+        <div class="input-line"><input id="current" name="current" type="text" inputmode="none" readonly aria-controls="keypad" enterkeyhint="next" placeholder="—" maxlength="9" aria-label="現在体重、キログラム" aria-describedby="current-error" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"><span class="unit" aria-hidden="true">kg</span></div>
+        <span class="error" id="current-error">0より大きい数値を入力</span>
+      </div>
+      <div class="field" id="field-bmi">
+        <label for="bmi">BMI</label>
+        <div class="input-line"><input id="bmi" name="bmi" type="text" inputmode="none" readonly aria-controls="keypad" enterkeyhint="next" placeholder="—" maxlength="9" aria-describedby="bmi-error" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"><span class="unit" aria-hidden="true">kg/m²</span></div>
+        <span class="error" id="bmi-error">0より大きい数値を入力</span>
+      </div>
+    </div>
+    <div class="history-head" aria-hidden="true"><span>比較する時点</span><span>体重</span><span>体重減少率</span></div>
+    <div class="history-row">
+      <label for="week">1週間前</label>
+      <div class="field" id="field-week">
+        <div class="input-line"><input id="week" name="week" type="text" inputmode="none" readonly aria-controls="keypad" enterkeyhint="next" placeholder="—" maxlength="9" aria-label="1週間前の体重、キログラム" aria-describedby="week-error" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"><span class="unit" aria-hidden="true">kg</span></div>
+        <span class="error" id="week-error">0より大きい数値を入力</span>
+      </div>
+      <output id="week-result" class="result" for="current week" data-state="empty" aria-label="1週間前からの体重減少率、未計算"><span class="result-number">—</span><span class="result-unit">%</span></output>
+    </div>
+    <div class="history-row">
+      <label for="month3">3か月前</label>
+      <div class="field" id="field-month3">
+        <div class="input-line"><input id="month3" name="month3" type="text" inputmode="none" readonly aria-controls="keypad" enterkeyhint="next" placeholder="—" maxlength="9" aria-label="3か月前の体重、キログラム" aria-describedby="month3-error" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"><span class="unit" aria-hidden="true">kg</span></div>
+        <span class="error" id="month3-error">0より大きい数値を入力</span>
+      </div>
+      <output id="month3-result" class="result" for="current month3" data-state="empty" aria-label="3か月前からの体重減少率、未計算"><span class="result-number">—</span><span class="result-unit">%</span></output>
+    </div>
+    <div class="history-row">
+      <label for="month6">6か月前</label>
+      <div class="field" id="field-month6">
+        <div class="input-line"><input id="month6" name="month6" type="text" inputmode="none" readonly aria-controls="keypad" enterkeyhint="next" placeholder="—" maxlength="9" aria-label="6か月前の体重、キログラム" aria-describedby="month6-error" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"><span class="unit" aria-hidden="true">kg</span></div>
+        <span class="error" id="month6-error">0より大きい数値を入力</span>
+      </div>
+      <output id="month6-result" class="result" for="current month6" data-state="empty" aria-label="6か月前からの体重減少率、未計算"><span class="result-number">—</span><span class="result-unit">%</span></output>
+    </div>
+    <div class="history-row">
+      <label for="maximum">MAX体重<small>過去1〜12か月</small></label>
+      <div class="field" id="field-maximum">
+        <div class="input-line"><input id="maximum" name="maximum" type="text" inputmode="none" readonly aria-controls="keypad" enterkeyhint="done" placeholder="—" maxlength="9" aria-label="過去1〜12か月の最大体重、キログラム" aria-describedby="maximum-error" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"><span class="unit" aria-hidden="true">kg</span></div>
+        <span class="error" id="maximum-error">0より大きい数値を入力</span>
+      </div>
+      <output id="maximum-result" class="result" for="current maximum" data-state="empty" aria-label="最大体重からの体重減少率、未計算"><span class="result-number">—</span><span class="result-unit">%</span></output>
+    </div>
+  </form>
+  <footer>
+    <p>（過去体重 − 現在体重）÷ 過去体重 × 100</p>
+    <p>マイナスは体重増加。GLIMの自動判定は行いません。</p>
+  </footer>
+</main>
+</div>
+<section class="keypad" id="keypad" aria-label="数字入力キーボード">
+  <div class="keypad-inner">
+    <div class="pad-bar"><span id="pad-label">現在体重</span></div>
+    <div class="keys">
+      <button class="key" type="button" disabled data-digit="1">1</button>
+      <button class="key" type="button" disabled data-digit="2">2</button>
+      <button class="key" type="button" disabled data-digit="3">3</button>
+      <button class="key key-back" type="button" disabled data-action="backspace" aria-label="1文字削除">⌫</button>
+      <button class="key" type="button" disabled data-digit="4">4</button>
+      <button class="key" type="button" disabled data-digit="5">5</button>
+      <button class="key" type="button" disabled data-digit="6">6</button>
+      <button class="key key-small" id="previous" type="button" disabled data-action="previous" aria-label="前の入力欄へ">前へ</button>
+      <button class="key" type="button" disabled data-digit="7">7</button>
+      <button class="key" type="button" disabled data-digit="8">8</button>
+      <button class="key" type="button" disabled data-digit="9">9</button>
+      <button class="key key-enter" id="enter" type="button" disabled data-action="next" aria-label="次の入力欄へ"><span id="enter-text">次へ ↵</span></button>
+      <button class="key" type="button" disabled data-digit="." aria-label="小数点">.</button>
+      <button class="key" type="button" disabled data-digit="0">0</button>
+      <button class="key key-small" type="button" disabled data-action="clear-field" aria-label="現在の入力欄を消去">消去</button>
+    </div>
+  </div>
+</section>
+<div class="sr-only" id="announcement" role="status" aria-live="polite" aria-atomic="true"></div>
+<script>
+(() => {
+  'use strict';
+  /*
+   * Standalone arithmetic aid, not a GLIM diagnosis or severity classifier.
+   * BMI is a manual reference only; it never changes the percentage calculation.
+   * Each comparison uses its own past weight as the denominator.
+   * No age/height/date inference, thresholds, patient IDs, network calls,
+   * cookies, analytics, storage, service workers, or external dependencies.
+   *
+   * v2: the keypad, including Next, exists visibly in the initial HTML.
+   * No user-agent, pointer, focus, or JavaScript condition hides the keypad.
+   * Read-only inputs are declared in HTML on every device, so the native
+   * decimal keyboard is not needed. Page buttons / hardware keys edit values.
+   * A static boot notice stays visible and buttons stay disabled if scripting
+   * is blocked or initialization fails. Rendering alone is not a working app.
+   * No claim of physical iPhone / native Safari testing is implied.
+   */
+  const form = document.getElementById('calculator');
+  const inputs = Array.from(form.querySelectorAll('input'));
+  const ids = inputs.map(input => input.id);
+  const labels = ['現在体重', 'BMI', '1週間前', '3か月前', '6か月前', 'MAX体重'];
+  const keypad = document.getElementById('keypad');
+  const padLabel = document.getElementById('pad-label');
+  const enterText = document.getElementById('enter-text');
+  const enter = document.getElementById('enter');
+  const previous = document.getElementById('previous');
+  const scrollArea = document.getElementById('scroll-area');
+  const announcement = document.getElementById('announcement');
+  const valueKeys = Array.from(keypad.querySelectorAll('[data-digit], [data-action="backspace"], [data-action="clear-field"]'));
+  let active = null;
+  let announceTimer;
+
+  function normalize(value) { return value.normalize('NFKC').trim(); }
+
+  /** Empty is missing, never zero; negative/non-finite/partly numeric text is invalid. */
+  function parse(value) {
+    const text = normalize(value);
+    if (text === '') return { value: null, invalid: false };
+    if (!/^(?:\d+(?:\.\d*)?|\.\d+)$/.test(text)) return { value: null, invalid: true };
+    const number = Number(text);
+    return Number.isFinite(number) && number > 0
+      ? { value: number, invalid: false }
+      : { value: null, invalid: true };
+  }
+
+  function say(message) {
+    clearTimeout(announceTimer);
+    announceTimer = setTimeout(() => { announcement.textContent = message; }, 220);
+  }
+
+  function update(announce = false) {
+    for (const input of inputs) {
+      const invalid = parse(input.value).invalid;
+      input.setAttribute('aria-invalid', String(invalid));
+      input.closest('.field').dataset.invalid = String(invalid);
+      const length = input.value.length;
+      input.dataset.length = length > 7 ? 'very-long' : length > 5 ? 'long' : 'normal';
+    }
+    const now = parse(inputs[0].value).value;
+    for (let i = 2; i < inputs.length; i++) {
+      const past = parse(inputs[i].value).value;
+      const output = document.getElementById(ids[i] + '-result');
+      const number = output.querySelector('.result-number');
+      if (now === null || past === null) {
+        number.textContent = '—';
+        output.dataset.state = 'empty';
+        output.dataset.length = 'normal';
+        output.setAttribute('aria-label', labels[i] + 'からの体重減少率、未計算');
+        output.removeAttribute('title');
+        continue;
+      }
+      const percent = ((past - now) / past) * 100;
+      // Round only the display; normalize negative zero to 0.0.
+      const rounded = Math.abs(percent) < 0.05 ? 0 : Number(percent.toFixed(1));
+      const fixed = rounded.toFixed(1);
+      const text = (fixed.length > 10 ? rounded.toExponential(2) : fixed).replace('-', '−');
+      number.textContent = text;
+      output.dataset.state = rounded < 0 ? 'gain' : rounded > 0 ? 'loss' : 'zero';
+      output.dataset.length = text.length > 8 ? 'very-long' : text.length > 5 ? 'long' : 'normal';
+      output.setAttribute('aria-label', labels[i] + 'からの体重減少率、' + text + 'パーセント' + (rounded < 0 ? '、体重増加' : ''));
+      output.title = '丸め前：' + percent.toPrecision(8) + '%';
+    }
+    if (announce && active) {
+      const result = document.getElementById(active.id + '-result');
+      say(labels[inputs.indexOf(active)] + '、' + (active.value || '空欄') +
+        (active.id === 'bmi' ? '' : 'キログラム') +
+        (result ? '。' + result.getAttribute('aria-label') : ''));
+    }
+  }
+
+  function setSelection(input, start, end = start) {
+    try { input.setSelectionRange(start, end); } catch (_) { /* non-selectable fallback */ }
+  }
+
+  function showActive(input) {
+    active = input;
+    inputs.forEach(item => item.closest('.field').classList.toggle('active', item === input));
+    const index = inputs.indexOf(input);
+    padLabel.textContent = labels[index];
+    previous.disabled = index === 0;
+    const isLast = index === inputs.length - 1;
+    enterText.textContent = isLast ? '完了 ↵' : '次へ ↵';
+    enter.setAttribute('aria-label', isLast ? '入力を完了' : '次の入力欄、' + labels[index + 1] + 'へ');
+    valueKeys.forEach(button => { button.disabled = false; });
+    document.body.classList.add('editing');
+    requestAnimationFrame(() => {
+      const row = input.closest('.history-row') || input.closest('.current');
+      const rect = row.getBoundingClientRect();
+      const view = scrollArea.getBoundingClientRect();
+      if (rect.bottom > view.bottom - 10) scrollArea.scrollTop += rect.bottom - view.bottom + 10;
+      else if (rect.top < view.top + 10) scrollArea.scrollTop -= view.top - rect.top + 10;
+    });
+  }
+
+  function focusInput(input, selectAll = true) {
+    if (!input) return;
+    input.focus({ preventScroll: true });
+    showActive(input);
+    if (selectAll) setSelection(input, 0, input.value.length);
+  }
+
+  function closePad() {
+    // Completion never hides the visible page-owned Next/Done control.
+    document.body.classList.remove('editing');
+    padLabel.textContent = '入力完了';
+    enterText.textContent = '入力へ ↵';
+    enter.setAttribute('aria-label', '現在体重から入力を再開');
+    previous.disabled = true;
+    valueKeys.forEach(button => { button.disabled = true; });
+    inputs.forEach(input => input.closest('.field').classList.remove('active'));
+    const input = active;
+    active = null;
+    if (input) {
+      input.value = normalize(input.value);
+      input.blur();
+    }
+    if (keypad.contains(document.activeElement)) document.activeElement.blur();
+    update();
+  }
+
+  function move(step) {
+    if (!active) { focusInput(inputs[0]); return; }
+    active.value = normalize(active.value);
+    if (step > 0 && parse(active.value).invalid) {
+      update();
+      say('0より大きい数値を入力してください');
+      focusInput(active);
+      return;
+    }
+    const index = inputs.indexOf(active);
+    const next = inputs[index + step];
+    if (next) focusInput(next);
+    else if (step > 0) {
+      closePad();
+      scrollArea.scrollTop = 0;
+      say('入力完了');
+    }
+  }
+
+  /** Replace the selection, or insert at the caret, without ever silently coercing a weight. */
+  function edit(action, digit = '') {
+    if (!active) return;
+    const input = active;
+    const value = input.value;
+    let start = input.selectionStart === null ? value.length : input.selectionStart;
+    let end = input.selectionEnd === null ? value.length : input.selectionEnd;
+    let replacement = digit;
+    if (action === 'clear-field') { start = 0; end = value.length; replacement = ''; }
+    else if (action === 'backspace') { if (start === end) start = Math.max(0, start - 1); replacement = ''; }
+    else if (action === 'delete') { if (start === end) end = Math.min(value.length, end + 1); replacement = ''; }
+    else if (action !== 'insert') return;
+    if (replacement === '.' && start === 0 && (end === value.length || value === '')) replacement = '0.';
+    const result = value.slice(0, start) + replacement + value.slice(end);
+    if (result.length > input.maxLength || !/^\d*(?:\.\d*)?$/.test(result)) return;
+    input.value = result;
+    // focus is restored for assistive-technology button activation as well as touch.
+    input.focus({ preventScroll: true });
+    setSelection(input, start + replacement.length);
+    update(true);
+  }
+
+  for (const input of inputs) {
+    input.addEventListener('focus', () => showActive(input));
+    // Show the pad again after Done even if a browser kept a readonly input focused.
+    input.addEventListener('click', () => showActive(input));
+    input.addEventListener('input', event => { if (!event.isComposing) update(true); });
+    input.addEventListener('compositionend', () => update(true));
+    input.addEventListener('blur', () => {
+      input.value = normalize(input.value);
+      update();
+    });
+    input.addEventListener('paste', event => {
+      event.preventDefault();
+      const pasted = normalize(event.clipboardData ? event.clipboardData.getData('text') : '');
+      if (/^(?:\d+(?:\.\d*)?|\.\d+)$/.test(pasted)) edit('insert', pasted);
+      else say('数値のみ貼り付けてください');
+    });
+    input.addEventListener('keydown', event => {
+      if (event.isComposing || event.keyCode === 229) return;
+      if (event.key === 'Enter') {
+        event.preventDefault();
+        if (!event.repeat) move(event.shiftKey ? -1 : 1);
+        return;
+      }
+      if (event.key === 'Escape') { event.preventDefault(); closePad(); return; }
+      if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === 'a') {
+        event.preventDefault(); setSelection(input, 0, input.value.length); return;
+      }
+      if (event.metaKey || event.ctrlKey || event.altKey) return;
+      if (/^[0-9.]$/.test(event.key)) { event.preventDefault(); edit('insert', event.key); }
+      else if (event.key === 'Backspace') { event.preventDefault(); edit('backspace'); }
+      else if (event.key === 'Delete') { event.preventDefault(); edit('delete'); }
+    });
+  }
+
+  // Preserve the caret when a key is tapped. Click still works for mouse, touch,
+  // keyboard activation, and screen readers; no synthetic touch-only events.
+  keypad.addEventListener('pointerdown', event => {
+    const button = event.target.closest('button');
+    if (button && !button.disabled) event.preventDefault();
+  });
+  keypad.addEventListener('click', event => {
+    const button = event.target.closest('button');
+    if (!button || button.disabled) return;
+    if (button.dataset.digit !== undefined) { edit('insert', button.dataset.digit); return; }
+    const action = button.dataset.action;
+    if (action === 'next') move(1);
+    else if (action === 'previous') move(-1);
+    else edit(action);
+  });
+
+  form.addEventListener('submit', event => event.preventDefault());
+  document.getElementById('reset').addEventListener('click', () => {
+    inputs.forEach(input => { input.value = ''; });
+    update();
+    scrollArea.scrollTop = 0;
+    focusInput(inputs[0], false);
+    say('すべての入力をクリアしました');
+  });
+
+  // Clear both initial/reload values and any back-forward-cache restoration.
+  // Merely switching apps does not erase an unfinished entry.
+  window.addEventListener('pageshow', () => {
+    closePad();
+    inputs.forEach(input => { input.value = ''; });
+    update();
+    scrollArea.scrollTop = 0;
+    showActive(inputs[0]);
+  });
+  update();
+  // These steps are last: enable controls only after handlers are registered.
+  document.querySelectorAll('button').forEach(button => { button.disabled = false; });
+  showActive(inputs[0]);
+  document.getElementById('boot-message').hidden = true;
+  document.documentElement.dataset.appReady = 'true';
+})();
+</script>
+</body>
+</html>
